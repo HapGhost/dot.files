@@ -1,4 +1,6 @@
 #!/bin/bash
+sudo apt-get update -oAcquire::AllowInsecureRepositories=true
+sudo apt-get install deb-multimedia-keyring
 
 sudo aptitude update; sudo aptitude install -t testing \
   zram-tools micro \
