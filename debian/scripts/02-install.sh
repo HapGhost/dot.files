@@ -1,7 +1,4 @@
 #!/bin/bash
-sudo apt-get update -oAcquire::AllowInsecureRepositories=true
-sudo apt-get install deb-multimedia-keyring
-
 sudo aptitude update; sudo aptitude install -t testing \
   zram-tools micro \
   apt-transport-https \
@@ -32,6 +29,9 @@ sudo aptitude update; sudo aptitude install -t testing \
   #netplan.io
 
 sudo aptitude update; sudo aptitude install -t unstable btrfs-progs cifs-utils -y
+
+sudo apt-get update -oAcquire::AllowInsecureRepositories=true
+sudo apt-get install deb-multimedia-keyring
 
 ####Enable Google BBR --- CHECK // NOT IN LXC
 curl -fsSL git.io/deploy-google-bbr.sh | bash
