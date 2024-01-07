@@ -1,0 +1,35 @@
+#!/bin/bash
+
+sudo aptitude update; sudo aptitude install -t testing \
+  zram-tools micro \
+  apt-transport-https \
+  ca-certificates \
+  apt-utils \
+  git \
+  zsh \
+  zsh-autosuggestions \
+  zsh-syntax-highlighting \
+  zsh-theme-powerlevel9k \
+  curl \
+  netbase \
+  wget \
+  tzdata \
+  locales \
+  gnupg2 \
+  openssl \
+  openssh-server \
+  xz-utils \
+  dbus-broker \
+  apparmor apparmor-profiles apparmor-utils apparmor-profiles-extra\
+  bind9-dnsutils \
+  aptitude \
+  nftables \
+  #ufw \
+  #kmod \
+  #cron \
+  #netplan.io
+
+sudo aptitude update; sudo aptitude install -t unstable btrfs-progs cifs-utils -y
+
+####Enable Google BBR --- CHECK // NOT IN LXC
+curl -fsSL git.io/deploy-google-bbr.sh | bash

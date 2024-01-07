@@ -1,0 +1,138 @@
+-->
+Package: linux-*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: firmware-*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: mesa-*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: libopengl*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: gstreamer*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: libgstreamer*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: pipewire*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: wireplumber*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: libpipewire*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: libwireplumber*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: wayland*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: libwayland*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: libcanberra*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: libglib2*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: libc-*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: libffi8*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: xdg*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: ffmpeg*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: *
+Pin: release a=unstable
+Pin-Priority: 100
+
+Package: *
+Pin: release a=testing, l=debian
+Pin-Priority: 800
+
+Package: *
+Pin: release a=testing-security
+Pin-Priority: 900
+
+Package: *
+Pin: release a=stable, l=debian
+Pin-Priority: 900
+
+Package: *
+Pin: release a=stable-security
+Pin-Priority: 900
+<--
+#for AMD/intel/NVIDIA Platforms ADD:
+-->
+Package: intel-*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: amd64-*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: nvidia-*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: libnv*
+Pin: release a=unstable
+Pin-Priority: 900
+<--
+#for GNOME
+-->
+Package: gnome*
+Pin: release a=testing
+Pin-Priority: 900
+
+Package: libgnome*
+Pin: release a=testing
+Pin-Priority: 900
+
+Package: libmutter-*
+Pin: release a=testing
+Pin-Priority: 900
+
+Package: adwaita*
+Pin: release a=testing
+Pin-Priority: 900
+
+Package: libadwaita*
+Pin: release a=testing
+Pin-Priority: 900
+
+Package: libgtk*
+Pin: release a=testing
+Pin-Priority: 900
+
+<--
