@@ -101,6 +101,10 @@ Package: amd64-*
 Pin: release a=unstable
 Pin-Priority: 900
 
+Package: *
+Pin: release o=nvidia
+Pin-Priority: 900
+
 Package: nvidia-*
 Pin: release a=unstable
 Pin-Priority: 900

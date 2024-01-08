@@ -4,6 +4,9 @@ sudo aptitude update; sudo aptitude install -t testing \
   apt-transport-https \
   ca-certificates \
   apt-utils \
+  software-properties-common \
+  dirmngr \
+  dkms \
   git \
   zsh \
   zsh-autosuggestions \
