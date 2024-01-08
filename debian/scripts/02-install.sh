@@ -31,9 +31,9 @@ sudo aptitude update; sudo aptitude install -t testing \
 sudo aptitude update; sudo aptitude install -t unstable btrfs-progs cifs-utils -y
 
 sudo apt-get update -oAcquire::AllowInsecureRepositories=true
-sudo aptitude install deb-multimedia-keyring
+sudo apt-get install deb-multimedia-keyring -y
 
 ####Enable Google BBR --- CHECK // NOT IN LXC
 curl -fsSL git.io/deploy-google-bbr.sh | bash
 
-sudo aptitude safe-upgrade -y; sudo aptitude full upgrade -y
+sudo aptitude safe-upgrade -y; sudo aptitude full-upgrade -y
