@@ -102,7 +102,7 @@ Pin: release a=unstable
 Pin-Priority: 900
 
 Package: *
-Pin: release o=nvidia
+Pin: release o=NVIDIA
 Pin-Priority: 900
 
 Package: nvidia-*
