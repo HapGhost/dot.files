@@ -111,7 +111,5 @@ if [[ -n $SSH_CONNECTION ]]; then
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Created by `pipx` on 2023-08-10 00:10:57
-export PATH="$PATH:/home/hapghost/.local/bin"
 #neofetch
 /bin/neofetch --disable theme icons term gpu cpu resolution shell --color_blocks off --backend chafa --source /usr/share/desktop-base/debian-logos/logo.svg --size 300px;
