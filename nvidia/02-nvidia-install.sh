@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#Detection
+sudo aptitude update
+sudo aptitude install nvidia-detect
+
+lspci -nn | egrep -i "3d|display|vga"
+nvidia-detect
+
 # Nvidia driver
 sudo aptitude install nvidia-driver nvidia-smi nvidia-settings linux-headers-amd64 firmware-misc-nonfree 
 sudo cp ./nvidia-options.conf /etc/modprobe.d
