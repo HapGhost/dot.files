@@ -1,5 +1,12 @@
 #!/bin/bash
 
+sudo apt update; sudo apt install -y aptitude \
+	  apt-transport-https \
+	  ca-certificates \
+	  apt-utils \
+    nano \
+    micro
+
 sudo cp ../hyper-debian.list /etc/apt/sources.d/
 sudo cp ../hyper-debian /etc/apt/preferences.d/
 
