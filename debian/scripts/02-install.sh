@@ -7,8 +7,8 @@ sudo apt update; sudo apt install -y aptitude \
     nano \
     micro
 
-sudo cp ../hyper-debian.list /etc/apt/sources.d/
-sudo cp ../hyper-debian /etc/apt/preferences.d/
+sudo cp ../apt/hyper-debian.list /etc/apt/sources.d/
+sudo cp ../apt/hyper-debian /etc/apt/preferences.d/
 
 sudo aptitude update; sudo aptitude install -t testing -y \
   zram-tools micro \
@@ -46,7 +46,7 @@ sudo aptitude update; sudo aptitude install -t unstable -y \
   dkms sbsigntool \
   linux-image-amd64 linux-headers-amd64
   
-sudo cp ../deb-multimedia.list /etc/apt/sources.d/
+sudo cp ../apt/deb-multimedia.list /etc/apt/sources.d/
 
 sudo apt-get update -oAcquire::AllowInsecureRepositories=true
 sudo apt-get install deb-multimedia-keyring -y
