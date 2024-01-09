@@ -39,7 +39,7 @@ sudo aptitude update; sudo aptitude install -t testing -y \
   #cron \
   #netplan.io
 
-sudo aptitude update; sudo aptitude install -t unstable -y /
+sudo aptitude update; sudo aptitude install -t unstable -y \
   btrfs-progs cifs-utils \
   software-properties-common \
   dirmngr \
