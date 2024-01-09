@@ -1,0 +1,4 @@
+deb https://www.deb-multimedia.org unstable main non-free
+#deb-src https://www.deb-multimedia.org unstable main
+#deb https://www.deb-multimedia.org testing main non-free
+#deb https://www.deb-multimedia.org stable main non-free

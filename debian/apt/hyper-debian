@@ -1,4 +1,3 @@
--->
 Package: linux-*
 Pin: release a=unstable
 Pin-Priority: 900
@@ -90,9 +89,7 @@ Pin-Priority: 900
 Package: *
 Pin: release a=stable-security
 Pin-Priority: 900
-<--
-#for AMD/intel/NVIDIA Platforms ADD:
--->
+
 Package: intel-*
 Pin: release a=unstable
 Pin-Priority: 900
@@ -112,9 +109,7 @@ Pin-Priority: 900
 Package: libnv*
 Pin: release a=unstable
 Pin-Priority: 900
-<--
-#for GNOME
--->
+
 Package: gnome*
 Pin: release a=testing
 Pin-Priority: 900
@@ -126,17 +121,3 @@ Pin-Priority: 900
 Package: libmutter-*
 Pin: release a=testing
 Pin-Priority: 900
-
-Package: adwaita*
-Pin: release a=testing
-Pin-Priority: 900
-
-Package: libadwaita*
-Pin: release a=testing
-Pin-Priority: 900
-
-Package: libgtk*
-Pin: release a=testing
-Pin-Priority: 900
-
-<--
