@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo aptitude update; sudo aptitude install -t unstable -y \
   pipewire \
   wireplumber \

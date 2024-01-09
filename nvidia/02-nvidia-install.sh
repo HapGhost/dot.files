@@ -1,13 +1,10 @@
 #!/bin/bash
+
 # Nvidia driver
 sudo aptitude install nvidia-driver nvidia-smi nvidia-settings linux-headers-amd64 firmware-misc-nonfree 
-sudo cp ./nvidia-options.conf /etc/modeprobe.d
-### DMA Buffers / IOMMU (https://us.download.nvidia.com/XFree86/Linux-x86_64/525.147.05/README/dma_issues.html)
-### experimental add 'nvidia-drm.fbdev=1' below for >545.x.x driver
-sudo su
-echo 'GRUB_CMDLINE_LINUX="$GRUB_CMDLINE_LINUX nvidia-drm.modeset=1 nvidia-drm.fbdev=1 iommu=memaper mem_sleep_default=deep"' > /etc/default/grub.d/nvidia-modeset.cfg
-update-grub
-exit
+sudo cp ./nvidia-options.conf /etc/modprobe.d
+
+# Power Management for Gnome
 TMPL_PATH=.
 sudo install --mode 644 "${TMPL_PATH}/system/nvidia-suspend.service" /etc/systemd/system
 sudo install --mode 644 "${TMPL_PATH}/system/nvidia-hibernate.service" /etc/systemd/system
