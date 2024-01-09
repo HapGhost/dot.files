@@ -1,6 +1,7 @@
 #!/bin/bash
 
-sudo apt update; sudo apt install -y aptitude \
+sudo apt update; sudo apt install -y -R \
+    aptitude \
 	  apt-transport-https \
 	  ca-certificates \
 	  apt-utils \
@@ -10,7 +11,7 @@ sudo apt update; sudo apt install -y aptitude \
 sudo cp ../apt/hyper-debian.list /etc/apt/sources.list.d/
 sudo cp ../apt/hyper-debian /etc/apt/preferences.d/
 
-sudo aptitude update; sudo aptitude install -t testing -y \
+sudo aptitude update; sudo aptitude install -t testing -R -y \
   zram-tools micro \
   apt-transport-https \
   ca-certificates \
@@ -33,7 +34,8 @@ sudo aptitude update; sudo aptitude install -t testing -y \
   apparmor apparmor-profiles apparmor-utils apparmor-profiles-extra\
   bind9-dnsutils \
   aptitude \
-  nftables
+  nftables \
+  timeshift
   #ufw \
   #kmod \
   #cron \
@@ -45,12 +47,7 @@ sudo aptitude update; sudo aptitude install -t unstable -y \
   dirmngr \
   dkms sbsigntool \
   linux-image-amd64 linux-headers-amd64 firmware-linux \
-  pipewire \
-  wireplumber \
-  mesa-vulkan-drivers \
-  mesa-vdpau-drivers \
-  mesa-va-drivers \
-  libopengl0
+
   
 ####Enable Google BBR --- CHECK // NOT IN LXC
 curl -fsSL git.io/deploy-google-bbr.sh | bash
