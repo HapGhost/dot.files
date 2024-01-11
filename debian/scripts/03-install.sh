@@ -8,7 +8,7 @@ sudo aptitude update; sudo aptitude install -t unstable -y \
   mesa-va-drivers \
   libopengl0 \
   libgd3 \
-  mungohud \
+  mangohud \
   gamescope \
   goverlay
    
