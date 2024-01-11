@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update; sudo apt install -y -R \
+sudo apt update; sudo apt install -y \
     aptitude \
 	  apt-transport-https \
 	  ca-certificates \
@@ -45,8 +45,8 @@ sudo aptitude update; sudo aptitude install -t unstable -y \
   btrfs-progs cifs-utils \
   software-properties-common \
   dirmngr \
-  dkms sbsigntool \
-  linux-image-amd64 linux-headers-amd64 firmware-linux \
+  dkms sbsigntool 
+#  linux-image-amd64 linux-headers-amd64 firmware-linux \
 
   
 ####Enable Google BBR --- CHECK // NOT IN LXC
@@ -55,6 +55,6 @@ curl -fsSL git.io/deploy-google-bbr.sh | bash
 ### optimize zram swap
 sudo cp ../sysctl/99-vm-zram-parameters.conf /etc/sysctl.d/
 
-sudo aptitude safe-upgrade -y; sudo aptitude full-upgrade -y
+sudo aptitude safe-upgrade -y; sudo aptitude full-upgrade
 
 echo "Done...Please reboot!"

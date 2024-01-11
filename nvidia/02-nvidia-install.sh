@@ -2,13 +2,13 @@
 
 #Detection
 sudo aptitude update
-sudo aptitude install nvidia-detect
+sudo aptitude install -t unstable nvidia-detect
 
 lspci -nn | egrep -i "3d|display|vga"
 nvidia-detect
 
 # Nvidia driver
-sudo aptitude install nvidia-driver nvidia-smi nvidia-settings linux-headers-amd64 firmware-misc-nonfree 
+sudo aptitude install -t unstable nvidia-driver nvidia-smi nvidia-settings linux-headers-amd64 firmware-misc-nonfree 
 sudo cp ./nvidia-options.conf /etc/modprobe.d
 
 # Power Management for Gnome
@@ -23,6 +23,6 @@ sudo systemctl enable nvidia-hibernate.service
 sudo systemctl enable nvidia-resume.service
 
 # CUDA
-sudo aptitude install nvidia-cuda-dev nvidia-cuda-toolkit
+sudo aptitude install -t unstable nvidia-cuda-dev nvidia-cuda-toolkit
 # OptiX Ray-Tracing
-sudo aptitude install libnvoptix1
+sudo aptitude install -t unstable libnvoptix1
