@@ -1,3 +1,7 @@
+#neofetch
+#/bin/neofetch --disable theme icons term gpu cpu resolution shell --color_blocks off --backend chafa --source /usr/share/desktop-base/debian-logos/logo.svg --size 300px;
+/bin/neofetch --disable theme icons term gpu cpu resolution shell --color_blocks off --backend ascii --source /usr/share/desktop-base/debian-logos/logo.svg --size 300px;
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -110,6 +114,3 @@ if [[ -n $SSH_CONNECTION ]]; then
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-#neofetch
-/bin/neofetch --disable theme icons term gpu cpu resolution shell --color_blocks off --backend chafa --source /usr/share/desktop-base/debian-logos/logo.svg --size 300px;

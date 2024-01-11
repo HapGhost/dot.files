@@ -1,10 +1,10 @@
 #!/bin/bash
-
+### PRE Desktop install
 sudo apt update; sudo apt install -y \
     aptitude \
-	  apt-transport-https \
-	  ca-certificates \
-	  apt-utils \
+    apt-transport-https \
+    ca-certificates \
+    apt-utils \
     nano \
     micro
 
@@ -35,7 +35,7 @@ sudo aptitude update; sudo aptitude install -t testing -R -y \
   bind9-dnsutils \
   aptitude \
   nftables \
-  timeshift
+  #timeshift
   #ufw \
   #kmod \
   #cron \
