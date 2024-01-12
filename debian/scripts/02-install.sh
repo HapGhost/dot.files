@@ -45,6 +45,7 @@ sudo aptitude update; sudo aptitude install -t unstable -y \
   btrfs-progs cifs-utils \
   software-properties-common \
   dirmngr \
+  numactl \
   dkms sbsigntool 
 #  linux-image-amd64 linux-headers-amd64 firmware-linux \
 

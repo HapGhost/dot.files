@@ -8,7 +8,7 @@ lspci -nn | egrep -i "3d|display|vga"
 nvidia-detect
 
 # Nvidia driver
-sudo aptitude install -t unstable nvidia-driver nvidia-smi nvidia-settings linux-headers-amd64 firmware-misc-nonfree 
+sudo aptitude install -t unstable nvidia-driver nvidia-smi nvidia-settings  
 sudo cp ./nvidia-options.conf /etc/modprobe.d
 
 # Power Management for Gnome
