@@ -1,7 +1,8 @@
 #!/bin/bash
 ### PRE Desktop install
-sudo apt update; sudo apt install -y \
+sudo apt update; sudo apt-get install -y --no-install-recommends \
     aptitude \
+    nala \
     apt-transport-https \
     ca-certificates \
     apt-utils \
@@ -11,7 +12,7 @@ sudo apt update; sudo apt install -y \
 sudo cp ../apt/hyper-debian.list /etc/apt/sources.list.d/
 sudo cp ../apt/hyper-debian /etc/apt/preferences.d/
 
-sudo aptitude update; sudo aptitude install -t testing -R -y \
+sudo nala update; sudo aptitude install -t testing -y \
   zram-tools micro \
   apt-transport-https \
   ca-certificates \
@@ -34,19 +35,18 @@ sudo aptitude update; sudo aptitude install -t testing -R -y \
   apparmor apparmor-profiles apparmor-utils apparmor-profiles-extra\
   bind9-dnsutils \
   aptitude \
-  nftables \
+  nala \
+  nftables ufw
   #timeshift
-  #ufw \
-  #kmod \
   #cron \
   #netplan.io
 
-sudo aptitude update; sudo aptitude install -t unstable -y \
+sudo nala update; sudo aptitude install -t unstable -y \
   btrfs-progs cifs-utils \
   software-properties-common \
   dirmngr \
   numactl \
-  dkms sbsigntool 
+  dkms sbsigntool kmod
 #  linux-image-amd64 linux-headers-amd64 firmware-linux \
 
   

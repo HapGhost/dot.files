@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Detection
-sudo aptitude update
+sudo nala update
 sudo aptitude install -t unstable nvidia-detect
 
 lspci -nn | egrep -i "3d|display|vga"
