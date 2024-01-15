@@ -1,6 +1,6 @@
 #!/bin/bash
 ### PRE Desktop install
-sudo apt update; sudo apt-get install -y --no-install-recommends \
+sudo apt update; sudo apt install -y --no-install-recommends \
     aptitude \
     nala \
     apt-transport-https \
@@ -41,21 +41,29 @@ sudo nala update; sudo aptitude install -t testing -y \
   #cron \
   #netplan.io
 
-sudo nala update; sudo aptitude install -t unstable -y \
+sudo nala update; sudo aptitude install -t unstable -yy \
   btrfs-progs cifs-utils \
-  software-properties-common \
+  software-properties-common build-essentials \
   dirmngr \
   numactl \
   dkms sbsigntool kmod
 #  linux-image-amd64 linux-headers-amd64 firmware-linux \
 
-  
-####Enable Google BBR --- CHECK // NOT IN LXC
+  echo
+####Enable Google BBR
 curl -fsSL git.io/deploy-google-bbr.sh | bash
 
+echo
 ### optimize zram swap
 sudo cp ../sysctl/99-vm-zram-parameters.conf /etc/sysctl.d/
 
-sudo aptitude safe-upgrade -y; sudo aptitude full-upgrade
+sudo aptitude safe-upgrade -yy
+
+echo
+# Create folders in user directory (eg. Documents,Downloads,etc.)
+sudo aptitude install -t testing xdg-user-dirs-gtk
+xdg-user-dirs-update
+
+sudo apt autoremove -yy
 
 echo "Done...Please reboot!"

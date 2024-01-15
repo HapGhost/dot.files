@@ -18,6 +18,7 @@ sudo nala update; sudo aptitude install -t unstable \
   mesa-opencl-icd \
   libopengl0 \
   libgd3 \
+  steam-libs \
   mangoapp \
   gamescope \
   goverlay \
@@ -29,8 +30,12 @@ sudo nala update; sudo aptitude install -t unstable \
   xdg-desktop-portal-wlr \
   vulkan-tools \
   v4l2loopback-dkms \
-  libglfw3
+  libglfw3 \
+
   
+### Fonts
+sudo aptitude install -t testing -y fonts-recommended fonts-font-awesome fonts-octicons 
+./sub-scripts/nerd-fonts.sh  
   
 ### custom-device-pollrates (pollrates USB - systemd service) +evhz to check pollrates
 ### Options:
@@ -61,5 +66,5 @@ sudo nala update; sudo aptitude install -t unstable \
 ### Other distro features From Nobara credits...:
 ### Webapps Manager from Linux Mint
 ### standalone gamescope session from ChimeraOS
-### Tiling in gnome with pop-shell from Pop!OS -> tiling shell extention in gnome
+### Tiling in gnome with pop-shell from Pop!OS -> tiling shell extension in gnome
 ### Hybryd GPU controls from asus-linux
