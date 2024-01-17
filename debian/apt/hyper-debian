@@ -6,6 +6,14 @@ Package: firmware-*
 Pin: release a=unstable
 Pin-Priority: 900
 
+Package: intel-*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: amd64-*
+Pin: release a=unstable
+Pin-Priority: 900
+
 Package: mesa-*
 Pin: release a=unstable
 Pin-Priority: 900
@@ -27,6 +35,10 @@ Pin: release a=unstable
 Pin-Priority: 900
 
 Package: pipewire*
+Pin: release a=unstable
+Pin-Priority: 900
+
+Package: alsa*
 Pin: release a=unstable
 Pin-Priority: 900
 
@@ -78,6 +90,18 @@ Package: *
 Pin: release a=unstable
 Pin-Priority: 100
 
+Package: gnome*
+Pin: release a=testing
+Pin-Priority: 900
+
+Package: libgnome*
+Pin: release a=testing
+Pin-Priority: 900
+
+Package: libmutter-*
+Pin: release a=testing
+Pin-Priority: 900
+
 Package: *
 Pin: release a=testing, l=debian
 Pin-Priority: 800
@@ -94,34 +118,6 @@ Package: *
 Pin: release a=stable-security
 Pin-Priority: 900
 
-Package: intel-*
-Pin: release a=unstable
-Pin-Priority: 900
-
-Package: amd64-*
-Pin: release a=unstable
-Pin-Priority: 900
-
 Package: *
 Pin: release o=NVIDIA
-Pin-Priority: 900
-
-Package: nvidia-*
-Pin: release a=unstable
-Pin-Priority: 900
-
-Package: libnv*
-Pin: release a=unstable
-Pin-Priority: 900
-
-Package: gnome*
-Pin: release a=testing
-Pin-Priority: 900
-
-Package: libgnome*
-Pin: release a=testing
-Pin-Priority: 900
-
-Package: libmutter-*
-Pin: release a=testing
 Pin-Priority: 900
