@@ -10,6 +10,10 @@ Package: mesa-*
 Pin: release a=unstable
 Pin-Priority: 900
 
+Package: libdrm*
+Pin: release a=unstable
+Pin-Priority: 900
+
 Package: libopengl*
 Pin: release a=unstable
 Pin-Priority: 900
