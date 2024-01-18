@@ -30,8 +30,10 @@ sudo nala update; sudo aptitude install -t unstable \
   gamemode \
   ffmpeg \
   libopenh264-cisco7 \
+  dav1d \
   libwlroots12 \
   qtwayland5 qt6-wayland \
+  libxcb1 xwayland libgbm1 \
   xdg-desktop-portal-wlr \
   xdg-utils \
   vulkan-tools \
