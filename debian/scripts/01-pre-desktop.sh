@@ -14,13 +14,13 @@ sudo apt update; sudo apt install -y --no-install-recommends \
 
 echo
 ### copy apt config
-sudo cp ../apt/hyper-debian.list /etc/apt/sources.list.d/
+sudo cp ../apt/*.list /etc/apt/sources.list.d/
 sudo cp ../apt/hyper-debian /etc/apt/preferences.d/
 sudo cp ../apt/local /etc/apt/apt.conf.d/
 
 echo
 ### install base tooling
-sudo nala update; sudo aptitude install -y \
+sudo nala update; sudo nala install -y \
   zram-tools micro \
   apt-transport-https \
   ca-certificates \
@@ -50,7 +50,7 @@ sudo nala update; sudo aptitude install -y \
   #netplan.io
 
 echo
-### to support stable kernel
+### to support "stable" kernel we need unstable :-)
 sudo nala update; sudo aptitude install -t unstable -yy \
   btrfs-progs cifs-utils \
   software-properties-common build-essential \
@@ -73,12 +73,19 @@ sudo aptitude safe-upgrade -yy
 
 echo
 # Create folders in user directory (eg. Documents,Downloads,etc.)
-sudo aptitude install xdg-user-dirs-gtk
+sudo nala install xdg-user-dirs-gtk
 xdg-user-dirs-update
 
 echo
-### cleanup
-sudo apt autoremove -yy
+### full upgrade & cleanup
+sudo aptitude update; sudo aptitude safe-upgrade -yy; sudo aptitude full-upgrade -yy; sudo aptitude clean --purge-unused -yy
+
+echo
+echo "For reference, here is the latest gnome-shell:"
+apt policy gnome-shell
+echo
+echo "Can be installed with:" 
+echo "$ sudo aptitude install -t experimental/unstable/testing/stable task-desktop"
 
 echo
 echo "Done...Please reboot!"

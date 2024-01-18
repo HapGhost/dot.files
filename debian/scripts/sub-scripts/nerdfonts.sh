@@ -3,15 +3,7 @@ mkdir -p ~/.local/share/fonts
 
 cd /tmp
 fonts=( 
-"CascadiaCode"
-"FiraCode" 
-"Go-Mono" 
 "Hack"  
-"Iosevka" 
-"JetBrainsMono" 
-"Mononoki" 
-"RobotoMono" 
-"SourceCodePro" 
 )
 
 for font in ${fonts[@]}

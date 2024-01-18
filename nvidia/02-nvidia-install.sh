@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #Detection
 sudo nala update

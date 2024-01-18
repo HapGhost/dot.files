@@ -38,10 +38,11 @@ sudo nala update; sudo aptitude install -t unstable \
   libglfw3 \
 
 echo  
-### Fonts
-sudo aptitude install -y fonts-recommended fonts-font-awesome fonts-octicons 
-#./sub-scripts/nerd-fonts.sh  
+### Fonts, cursus, icons
+sudo nala install -y fonts-recommended fonts-font-awesome fonts-octicons bibata-cursor-theme papirus-icon-theme
+./sub-scripts/nerd-fonts.sh  
   
+### to-do: ### 
 ### custom-device-pollrates (pollrates USB - systemd service) +evhz to check pollrates
 ### Options:
 ### switcheroo-control (D-Bus service to check...) --- FOR PRIME / dual gpu laptops/systems

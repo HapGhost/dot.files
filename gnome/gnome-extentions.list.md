@@ -10,6 +10,9 @@ just-perfection-desktop@just-perfection
 quick-settings-avatar@d-go
 quick-settings-tweaks@qwreey
 tophat@fflewddur.github.io
+Clipboard Indicator
+OpenWeather Refined
+Gamemode Indicator
 
 ### Installed from source:
 randomwallpaper@iflow.space
@@ -18,3 +21,4 @@ randomwallpaper@iflow.space
 Caffeine
 Tiling assistant
 User Themes
+extension-manager
