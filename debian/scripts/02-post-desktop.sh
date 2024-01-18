@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/bin/sh
+echo
+echo "Doing POST Desktop install..."
+echo
 ### POST Desktop install
 sudo nala update; sudo aptitude install -t unstable \
   pipewire \
@@ -10,12 +13,14 @@ sudo nala update; sudo aptitude install -t unstable \
   alsa-ucm-conf \
   alsa-utils \
   alsa-firmware-loaders \
+  alsa-firmware \
   gstreamer1.0-alsa \
   wireplumber \
   mesa-vulkan-drivers \
   mesa-vdpau-drivers \
   mesa-va-drivers \
   mesa-opencl-icd \
+  libdrm2 \
   libopengl0 \
   libgd3 \
   steam-libs \
@@ -32,10 +37,10 @@ sudo nala update; sudo aptitude install -t unstable \
   v4l2loopback-dkms \
   libglfw3 \
 
-  
+echo  
 ### Fonts
-sudo aptitude install -t testing -y fonts-recommended fonts-font-awesome fonts-octicons 
-./sub-scripts/nerd-fonts.sh  
+sudo aptitude install -y fonts-recommended fonts-font-awesome fonts-octicons 
+#./sub-scripts/nerd-fonts.sh  
   
 ### custom-device-pollrates (pollrates USB - systemd service) +evhz to check pollrates
 ### Options:
@@ -56,7 +61,7 @@ sudo aptitude install -t testing -y fonts-recommended fonts-font-awesome fonts-o
 ### ffmepg et al from dev-multimedia repo
 #sudo cp ../apt/deb-multimedia.list /etc/apt/sources.list.d/
 #sudo apt-get update -oAcquire::AllowInsecureRepositories=true
-#sudo apt-get install deb-multimedia-keyring -y
+#sudo apt-get install deb-multimedia-keyring -y --allow-unauthenticated
 #sudo aptitude update; sudo aptitude full-upgrade -y
 #sudo aptitude install -t unstable -y \ 
 #  ffmpeg \
@@ -68,3 +73,6 @@ sudo aptitude install -t testing -y fonts-recommended fonts-font-awesome fonts-o
 ### standalone gamescope session from ChimeraOS
 ### Tiling in gnome with pop-shell from Pop!OS -> tiling shell extension in gnome
 ### Hybryd GPU controls from asus-linux
+
+echo
+echo "Done...enjoy!"

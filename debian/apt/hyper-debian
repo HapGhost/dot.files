@@ -1,10 +1,10 @@
 Package: linux-*
 Pin: release a=unstable
-Pin-Priority: 900
+Pin-Priority: 990
 
 Package: firmware-*
 Pin: release a=unstable
-Pin-Priority: 900
+Pin-Priority: 990
 
 Package: intel-*
 Pin: release a=unstable
@@ -16,11 +16,11 @@ Pin-Priority: 900
 
 Package: mesa-*
 Pin: release a=unstable
-Pin-Priority: 900
+Pin-Priority: 990
 
 Package: libdrm*
 Pin: release a=unstable
-Pin-Priority: 900
+Pin-Priority: 990
 
 Package: libopengl*
 Pin: release a=unstable
@@ -89,18 +89,6 @@ Pin-Priority: 900
 Package: *
 Pin: release a=unstable
 Pin-Priority: 100
-
-Package: gnome*
-Pin: release a=testing
-Pin-Priority: 900
-
-Package: libgnome*
-Pin: release a=testing
-Pin-Priority: 900
-
-Package: libmutter-*
-Pin: release a=testing
-Pin-Priority: 900
 
 Package: *
 Pin: release a=testing, l=debian
