@@ -36,7 +36,7 @@ Pin-Priority: 900
 
 Package: pipewire*
 Pin: release a=unstable
-Pin-Priority: 900
+Pin-Priority: 990
 
 Package: alsa*
 Pin: release a=unstable
@@ -48,39 +48,27 @@ Pin-Priority: 900
 
 Package: libpipewire*
 Pin: release a=unstable
-Pin-Priority: 900
+Pin-Priority: 990
 
 Package: libwireplumber*
 Pin: release a=unstable
 Pin-Priority: 900
 
-Package: wayland*
-Pin: release a=unstable
-Pin-Priority: 900
-
 Package: libwayland*
 Pin: release a=unstable
-Pin-Priority: 900
-
-Package: libcanberra*
-Pin: release a=unstable
-Pin-Priority: 900
+Pin-Priority: 990
 
 Package: libglib2*
 Pin: release a=unstable
-Pin-Priority: 900
+Pin-Priority: 990
 
 Package: libc-*
 Pin: release a=unstable
-Pin-Priority: 900
-
-Package: libffi8*
-Pin: release a=unstable
-Pin-Priority: 900
+Pin-Priority: 990
 
 Package: xdg*
 Pin: release a=unstable
-Pin-Priority: 900
+Pin-Priority: 990
 
 Package: ffmpeg*
 Pin: release a=unstable

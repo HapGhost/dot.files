@@ -85,7 +85,7 @@ echo "For reference, here is the latest gnome-shell:"
 apt policy gnome-shell
 echo
 echo "Can be installed with:" 
-echo "$ sudo aptitude install -t experimental/unstable/testing/stable task-desktop"
+echo "$ sudo aptitude install -t experimental/unstable/testing/stable task-desktop task-gnome-desktop gnome-shell"
 
 echo
 echo "Done...Please reboot!"

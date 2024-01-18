@@ -33,6 +33,7 @@ sudo nala update; sudo aptitude install -t unstable \
   libwlroots12 \
   qtwayland5 qt6-wayland \
   xdg-desktop-portal-wlr \
+  xdg-utils \
   vulkan-tools \
   v4l2loopback-dkms \
   libglfw3 \

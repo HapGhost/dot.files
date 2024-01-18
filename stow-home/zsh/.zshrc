@@ -100,7 +100,7 @@ export MANROFFOPT="-c"
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='micro'
  else
-   export EDITOR='micro'
+   export EDITOR='nano'
  fi
 
 # Compilation flags
