@@ -40,8 +40,15 @@ sudo nala update; sudo aptitude install -t unstable \
 
 echo  
 ### Fonts, cursus, icons
-sudo nala install -y fonts-recommended fonts-font-awesome fonts-octicons bibata-cursor-theme papirus-icon-theme
-./sub-scripts/nerd-fonts.sh  
+sudo nala install -y \
+  fonts-recommended \
+  fonts-font-awesome \
+  fonts-octicons \
+  bibata-cursor-theme \
+  papirus-icon-theme \
+  ttf-mscorefonts-installer
+echo 
+./sub-scripts/nerdfonts.sh  
   
 ### to-do: ### 
 ### custom-device-pollrates (pollrates USB - systemd service) +evhz to check pollrates

@@ -10,7 +10,7 @@ Package: intel-*
 Pin: release a=unstable
 Pin-Priority: 900
 
-Package: amd64-*
+Package: amd*
 Pin: release a=unstable
 Pin-Priority: 900
 
