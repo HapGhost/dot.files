@@ -7,7 +7,7 @@ echo
 echo "Can be installed with:" 
 echo "$ sudo aptitude install -t experimental/unstable/testing/stable task-desktop task-gnome-desktop gnome-shell"
 
-sudo aptitude install -t experimental \
+sudo aptitude update; aptitude install -t experimental \
   task-desktop \
   task-gnome-desktop \
   task-danish \
@@ -17,7 +17,7 @@ sudo aptitude install -t experimental \
   gnome-shell-extention-manager \
   gnome-shell-extension-tiling-assistant \
   gnome-shell-extension-caffeine \
-  gnome-shell-extention-dashtodock \
+  gnome-shell-extention-dashtodock
 
 sudo aptitude install \
   flatpak \
