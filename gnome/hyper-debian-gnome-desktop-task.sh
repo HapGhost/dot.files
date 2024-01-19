@@ -7,21 +7,24 @@ echo
 echo "Can be installed with:" 
 echo "$ sudo aptitude install -t experimental/unstable/testing/stable task-desktop task-gnome-desktop gnome-shell"
 
-sudo aptitude update; aptitude install -t experimental \
+sudo aptitude update; sudo aptitude install \
   task-desktop \
   task-gnome-desktop \
   task-danish \
-  task-danish-desktop \
+  task-danish-desktop
+
+sudo aptitude install -t experimental \
   gnome-shell \
   gnome-shell-extension-prefs \
-  gnome-shell-extention-manager \
+  gnome-shell-extension-manager/unstable \
   gnome-shell-extension-tiling-assistant \
   gnome-shell-extension-caffeine \
-  gnome-shell-extention-dashtodock
+  gnome-shell-extension-dashtodock
 
 sudo aptitude install \
   flatpak \
   gnome-software-plugin-flatpak
 
+echo
 gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffer","kms-modifiers"]'
 

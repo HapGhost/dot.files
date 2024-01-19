@@ -3,24 +3,24 @@ echo
 echo "Doing PRE Desktop install..."
 echo
 ### PRE Desktop install
-sudo apt update; sudo apt install -y --no-install-recommends \
+sudo apt update; sudo apt install -y \
     aptitude \
-    nala \
     apt-transport-https \
     ca-certificates \
     apt-utils \
-    nano \
     micro
 
 echo
 ### copy apt config
-sudo cp ../apt/*.list /etc/apt/sources.list.d/
+sudo cp ../apt/hyper-debian.list /etc/apt/sources.list.d/
+sudo cp ../apt/experimental.list /etc/apt/sources.list.d/
 sudo cp ../apt/hyper-debian /etc/apt/preferences.d/
+sudo apt update
 sudo cp ../apt/local /etc/apt/apt.conf.d/
 
 echo
 ### install base tooling
-sudo nala update; sudo nala install -y \
+sudo aptitude update; sudo aptitude install -yy \
   zram-tools micro \
   apt-transport-https \
   ca-certificates \
@@ -43,21 +43,24 @@ sudo nala update; sudo nala install -y \
   apparmor apparmor-profiles apparmor-utils apparmor-profiles-extra\
   bind9-dnsutils \
   aptitude \
-  nala \
   nftables ufw
   #timeshift
   #cron \
   #netplan.io
 
 echo
+### do a safe-upgrade
+sudo aptitude safe-upgrade -yy
+
+echo
 ### to support "stable" kernel we need unstable :-)
-sudo nala update; sudo aptitude install -t unstable -yy \
+sudo aptitude update; sudo aptitude install -t unstable -yy \
   btrfs-progs cifs-utils \
   software-properties-common build-essential \
   dirmngr \
   numactl \
-  dkms sbsigntool kmod
-#  linux-image-amd64 linux-headers-amd64 firmware-linux \
+  dkms sbsigntool kmod \
+  linux-image-amd64 linux-headers-amd64 firmware-linux \
 
 echo
 ####Enable Google BBR
@@ -68,12 +71,8 @@ echo
 sudo cp ../sysctl/99-vm-zram-parameters.conf /etc/sysctl.d/
 
 echo
-### do a safe-upgrade
-sudo aptitude safe-upgrade -yy
-
-echo
 # Create folders in user directory (eg. Documents,Downloads,etc.)
-sudo nala install xdg-user-dirs-gtk -yy
+sudo aptitude install xdg-user-dirs-gtk -yy
 xdg-user-dirs-update
 
 echo

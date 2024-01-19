@@ -13,7 +13,6 @@ sudo nala update; sudo aptitude install -t unstable \
   alsa-ucm-conf \
   alsa-utils \
   alsa-firmware-loaders \
-  alsa-firmware \
   gstreamer1.0-alsa \
   wireplumber \
   mesa-vulkan-drivers \
@@ -29,7 +28,7 @@ sudo nala update; sudo aptitude install -t unstable \
   goverlay \
   gamemode \
   ffmpeg \
-  libopenh264-cisco7 \
+  libopenh264-7 \
   dav1d \
   libwlroots12 \
   qtwayland5 qt6-wayland \
