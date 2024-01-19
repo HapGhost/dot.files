@@ -10,6 +10,7 @@ echo "$ sudo aptitude install -t experimental/unstable/testing/stable task-deskt
 sudo aptitude update; sudo aptitude install \
   task-desktop \
   task-gnome-desktop \
+  task-english \
   task-danish \
   task-danish-desktop
 

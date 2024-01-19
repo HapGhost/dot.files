@@ -5,10 +5,16 @@ echo
 ### POST Desktop install
 sudo nala update; sudo aptitude install -t unstable \
   pipewire \
-  pipewire-audio-client-libraries \
+  pipewire-audio \
+  pipewire-pulse \
+  pipewire-alsa pipewire-jack \
   pipewire-v4l2 \
+  libspa-0.2-modules \
   libspa-0.2-jack \
+  libspa-0.2-libcamera \
+  libspa-0.2-bluetooth \
   helvum \
+  qjackctl \
   gstreamer1.0-pipewire \
   alsa-ucm-conf \
   alsa-utils \
@@ -39,6 +45,11 @@ sudo nala update; sudo aptitude install -t unstable \
   v4l2loopback-dkms \
   libglfw3 \
 
+echo
+### enable JACK
+sudo cp /usr/share/doc/pipewire/examples/ld.so.conf.d/pipewire-jack-*.conf /etc/ld.so.conf.d
+sudo ldconfig
+
 echo  
 ### Fonts, cursus, icons
 sudo nala install -y \
@@ -55,12 +66,13 @@ echo
 ### custom-device-pollrates (pollrates USB - systemd service) +evhz to check pollrates
 ### Options:
 ### switcheroo-control (D-Bus service to check...) --- FOR PRIME / dual gpu laptops/systems
-### ADD - but not available in repo:
-###   xwayland video bridge
-###   akmod-v4l2loopback + akmod-nvidia
+### ADD - but not available in deb repo:
+###   xwayland video bridge (AUD package available... check it out)
+###   akmod-v4l2loopback + akmod-nvidia (possible done?-- to check if this is same as v4l2loopback-dkms)
 ###   supergfxctl (super graphics mode controller)
-###   Protonup-qt
-###   OpenRGB
+###   Protonup-qt (optimal from flatpack? - Done)
+###   OpenRGB (optimal from AppImage? optimal to install with flatpak Gear Lever --needs to load UDEV rules)
+###   too WINE or not too WINE?
 
 
 ### to-do: Secure boot signing for v3 linux kernel 
@@ -81,7 +93,7 @@ echo
 ### Other distro features From Nobara credits...:
 ### Webapps Manager from Linux Mint
 ### standalone gamescope session from ChimeraOS
-### Tiling in gnome with pop-shell from Pop!OS -> tiling shell extension in gnome
+### Tiling in gnome with pop-shell from Pop!OS -> tiling shell extension in gnome (done)
 ### Hybryd GPU controls from asus-linux
 
 echo

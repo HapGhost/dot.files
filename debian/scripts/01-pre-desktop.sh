@@ -5,7 +5,7 @@ echo
 ### PRE Desktop install
 sudo apt update; sudo apt install -y \
     aptitude \
-    apt-transport-https \
+    apt \
     ca-certificates \
     apt-utils \
     micro
@@ -22,7 +22,8 @@ echo
 ### install base tooling
 sudo aptitude update; sudo aptitude install -yy \
   zram-tools micro \
-  apt-transport-https \
+  apt \
+  add-user \
   ca-certificates \
   apt-utils \
   git \
@@ -35,9 +36,10 @@ sudo aptitude update; sudo aptitude install -yy \
   wget \
   tzdata \
   locales \
-  gnupg2 \
+  gnupg \
   openssl \
   openssh-server \
+  task-ssh-server \
   xz-utils \
   dbus-broker \
   apparmor apparmor-profiles apparmor-utils apparmor-profiles-extra\
@@ -77,7 +79,7 @@ sudo aptitude install xdg-user-dirs-gtk -yy
 xdg-user-dirs-update
 
 echo
-### full upgrade & cleanup
+### full upgrade to testing/Sid & cleanup
 sudo aptitude update; sudo aptitude full-upgrade -yy; sudo aptitude clean --purge-unused -yy
 
 echo
