@@ -79,6 +79,10 @@ Pin: release a=unstable
 Pin-Priority: 100
 
 Package: *
+Pin: release a=experimental
+Pin-Priority: 100
+
+Package: *
 Pin: release a=testing, l=debian
 Pin-Priority: 800
 

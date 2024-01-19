@@ -78,7 +78,7 @@ xdg-user-dirs-update
 
 echo
 ### full upgrade & cleanup
-sudo aptitude update; sudo aptitude safe-upgrade -yy; sudo aptitude full-upgrade -yy; sudo aptitude clean --purge-unused -yy
+sudo aptitude update; sudo aptitude full-upgrade -yy; sudo aptitude clean --purge-unused -yy
 
 echo
 echo "For reference, here is the latest gnome-shell:"
