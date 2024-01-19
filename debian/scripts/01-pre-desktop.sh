@@ -43,6 +43,7 @@ sudo aptitude update; sudo aptitude install -yy \
   apparmor apparmor-profiles apparmor-utils apparmor-profiles-extra\
   bind9-dnsutils \
   aptitude \
+  nala \
   nftables ufw
   #timeshift
   #cron \
