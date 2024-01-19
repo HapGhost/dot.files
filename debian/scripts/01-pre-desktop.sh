@@ -73,7 +73,7 @@ sudo aptitude safe-upgrade -yy
 
 echo
 # Create folders in user directory (eg. Documents,Downloads,etc.)
-sudo nala install xdg-user-dirs-gtk
+sudo nala install xdg-user-dirs-gtk -yy
 xdg-user-dirs-update
 
 echo
