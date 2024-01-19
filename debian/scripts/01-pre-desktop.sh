@@ -23,7 +23,7 @@ echo
 sudo aptitude update; sudo aptitude install -yy \
   zram-tools micro \
   apt \
-  add-user \
+  adduser \
   ca-certificates \
   apt-utils \
   git \
