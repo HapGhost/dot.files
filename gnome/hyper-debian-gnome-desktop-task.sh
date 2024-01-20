@@ -37,4 +37,4 @@ sudo aptitude install \
 echo
 ### Misc. settings
 gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffer","kms-modifiers"]'
-sudo systemctl --system set-environment MOZ_ENABLE_WAYLAND=1
+systemctl --user set-environment MOZ_ENABLE_WAYLAND=1

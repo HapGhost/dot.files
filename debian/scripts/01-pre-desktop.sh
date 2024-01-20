@@ -7,8 +7,6 @@ sudo apt update; sudo apt install -y \
     aptitude \
     apt \
     ca-certificates \
-    # apt-utils \
-    micro
 
 echo
 ### copy apt config
@@ -33,15 +31,7 @@ sudo aptitude update; sudo aptitude install -yy \
   xz-utils \
   aptitude \
   nala \
-  # nftables ufw
-  #timeshift
-  #cron \
-  #netplan.io \
-  # netbase
-  # openssl \
-  # openssh-server \
-  # task-ssh-server 
-  # bind9-dnsutils \
+
 echo
 ### do a safe-upgrade
 sudo aptitude safe-upgrade -yy
