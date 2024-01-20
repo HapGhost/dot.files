@@ -7,7 +7,7 @@ sudo apt update; sudo apt install -y \
     aptitude \
     apt \
     ca-certificates \
-    apt-utils \
+    # apt-utils \
     micro
 
 echo
@@ -23,47 +23,38 @@ echo
 sudo aptitude update; sudo aptitude install -yy \
   zram-tools micro \
   apt \
-  adduser \
   ca-certificates \
-  apt-utils \
   git \
-  zsh \
-  zsh-autosuggestions \
-  zsh-syntax-highlighting \
-  zsh-theme-powerlevel9k \
   curl \
-  netbase \
   wget \
   tzdata \
   locales \
   gnupg \
-  openssl \
-  openssh-server \
-  task-ssh-server \
   xz-utils \
-  dbus-broker \
-  apparmor apparmor-profiles apparmor-utils apparmor-profiles-extra\
-  bind9-dnsutils \
   aptitude \
   nala \
-  nftables ufw
+  # nftables ufw
   #timeshift
   #cron \
-  #netplan.io
-
+  #netplan.io \
+  # netbase
+  # openssl \
+  # openssh-server \
+  # task-ssh-server 
+  # bind9-dnsutils \
 echo
 ### do a safe-upgrade
 sudo aptitude safe-upgrade -yy
 
 echo
-### to support "stable" kernel we need unstable :-)
+### to support "stable" kernel & NVIDIA kernel load we need unstable :-)
 sudo aptitude update; sudo aptitude install -t unstable -yy \
   btrfs-progs cifs-utils \
   software-properties-common build-essential \
   dirmngr \
-  numactl \
   dkms sbsigntool kmod \
   linux-image-amd64 linux-headers-amd64 firmware-linux \
+  libglvnd-dev
 
 echo
 ####Enable Google BBR
@@ -87,7 +78,7 @@ echo "For reference, here is the latest gnome-shell:"
 apt policy gnome-shell
 echo
 echo "Can be installed with:" 
-echo "$ sudo aptitude install -t experimental/unstable/testing/stable task-desktop task-gnome-desktop gnome-shell"
+echo "$ sudo aptitude install -t experimental/unstable/testing/stable gnome-shell"
 
 echo
 echo "Done...Please reboot!"

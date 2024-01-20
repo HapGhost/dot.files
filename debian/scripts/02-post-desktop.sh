@@ -2,7 +2,7 @@
 echo
 echo "Doing POST Desktop install..."
 echo
-### POST Desktop install
+### POST Desktop install/updates to latest upstream release
 sudo nala update; sudo aptitude install -t unstable \
   pipewire \
   pipewire-audio \
@@ -44,6 +44,8 @@ sudo nala update; sudo aptitude install -t unstable \
   vulkan-tools \
   v4l2loopback-dkms \
   libglfw3 \
+  dbus-broker \
+  apparmor apparmor-profiles apparmor-utils apparmor-profiles-extra
 
 echo
 ### enable JACK
@@ -75,7 +77,7 @@ echo
 ###   too WINE or not too WINE?
 
 
-### to-do: Secure boot signing for v3 linux kernel 
+### to-do: Secure boot signing for v3 Linux kernel 
 #wget -qO - https://dl.xanmod.org/archive.key | sudo gpg --dearmor -o /usr/share/keyrings/xanmod-archive-keyring.gpg
 #echo 'deb [signed-by=/usr/share/keyrings/xanmod-archive-keyring.gpg] http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-release.list
 #sudo aptitude update; sudo aptitude install linux-xanmod-x64v3 -y
@@ -91,7 +93,7 @@ echo
 #  vapoursynth \
 
 ### Other distro features From Nobara credits...:
-### Webapps Manager from Linux Mint
+### Webapps Manager from Linux Mint (sounds cool...)
 ### standalone gamescope session from ChimeraOS
 ### Tiling in gnome with pop-shell from Pop!OS -> tiling shell extension in gnome (done)
 ### Hybryd GPU controls from asus-linux

@@ -5,7 +5,7 @@ echo "For reference, here is the latest gnome-shell:"
 apt policy gnome-shell
 echo
 echo "Can be installed with:" 
-echo "$ sudo aptitude install -t experimental/unstable/testing/stable task-desktop task-gnome-desktop gnome-shell"
+echo "$ sudo aptitude install -t experimental/unstable/testing/stable gnome-shell"
 
 sudo aptitude update; sudo aptitude install \
   task-desktop \
@@ -22,10 +22,19 @@ sudo aptitude install -t experimental \
   gnome-shell-extension-caffeine \
   gnome-shell-extension-dashtodock
 
+echo
+### enable extensions
+gnome-extension enable dash-to-dock@micxgx.gmail.com
+gnome-extension enable tiling-assistant@leleat-on-github
+gnome-extention enable caffeine@patapon.info
+
+echo
+### flatpak support
 sudo aptitude install \
   flatpak \
   gnome-software-plugin-flatpak
 
 echo
+### Misc. settings
 gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffer","kms-modifiers"]'
-
+sudo systemctl --system set-environment MOZ_ENABLE_WAYLAND=1
