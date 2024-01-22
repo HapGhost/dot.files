@@ -7,8 +7,8 @@ echo
 echo "Can be installed with:" 
 echo "$ sudo aptitude install -t experimental/unstable/testing/stable gnome-shell"
 
-sudo aptitude update; sudo aptitude install -t -r testing perl+M;
-sudo aptitude full-upgrade -t -r testing \
+sudo aptitude update; sudo aptitude install -r -t testing perl+M;
+sudo aptitude full-upgrade -r -t testing \
   task-desktop \
   task-gnome-desktop+M \
   task-english \

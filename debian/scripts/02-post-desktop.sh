@@ -4,8 +4,8 @@ echo "Doing POST Desktop install..."
 echo
 ### POST Desktop install/updates to latest upstream release
 sudo nala update 
-sudo aptitude install -t -r testing perl+M 
-sudo aptitude install -t -r unstable \
+sudo aptitude install -r -t testing perl+M 
+sudo aptitude install -r -t unstable \
   pipewire+M \
   pipewire-audio+M \
   pipewire-pulse+M \
@@ -48,7 +48,7 @@ sudo aptitude install -t -r unstable \
   dbus-broker+M \
   apparmor+M apparmor-profiles+M apparmor-utils+M apparmor-profiles-extra+M
 
-sudo aptitude full-upgrade -t -r unstable \
+sudo aptitude full-upgrade -r -t unstable \
   gstreamer1.0-libav+M \
   libavcodec60+M \
   gstreamer1.0-packagekit+M

@@ -20,7 +20,7 @@ sudo apt update
 
 echo
 ### install base tooling
-sudo aptitude update; sudo aptitude install -yy \
+sudo aptitude update; sudo aptitude -t unstable install -yy \
   zram-tools micro \
   apt+M \
   ca-certificates+M \
@@ -28,6 +28,7 @@ sudo aptitude update; sudo aptitude install -yy \
   curl \
   wget \
   tzdata+M \
+  libc-bin+M \
   locales+M \
   gnupg+M \
   xz-utils+M \
