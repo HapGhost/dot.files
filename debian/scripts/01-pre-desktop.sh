@@ -56,6 +56,8 @@ echo
 ### full upgrade to testing/Sid & cleanup
 # sudo aptitude update; sudo aptitude full-upgrade -yy; sudo aptitude clean --purge-unused -yy
 
+../../nvidia/01-kernel.sh
+
 echo
 echo "For reference, here is the latest gnome-shell:"
 apt policy gnome-shell

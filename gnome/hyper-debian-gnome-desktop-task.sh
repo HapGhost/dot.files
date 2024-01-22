@@ -7,24 +7,20 @@ echo
 echo "Can be installed with:" 
 echo "$ sudo aptitude install -t experimental/unstable/testing/stable gnome-shell"
 
-sudo aptitude update; sudo aptitude full-upgrade -t testing \
+sudo aptitude update; sudo aptitude install -t -r testing perl+M;
+sudo aptitude full-upgrade -t -r testing \
   task-desktop \
   task-gnome-desktop+M \
   task-english \
   task-danish \
-  task-danish-desktop
-
-sudo aptitude full-upgrade -t testing \
-gnome+M \
-gnome-shell+M
-
-sudo aptitude install -t experimental \
-  gnome-shell+M \
-  gnome-shell-extension-prefs+M \
+  task-danish-desktop \
+  gnome-shell/experimental+M \
+  gnome-remote-desktop/experimental+M \
+  gnome-shell-extension-prefs/experimental+M \
   gnome-shell-extension-manager/testing \
-  gnome-shell-extension-tiling-assistant \
-  gnome-shell-extension-caffeine \
-  gnome-shell-extension-dashtodock
+  gnome-shell-extension-tiling-assistant/experimental \
+  gnome-shell-extension-caffeine/experimental \
+  gnome-shell-extension-dashtodock/experimental
 
 echo
 ### enable extensions
@@ -33,13 +29,16 @@ gnome-extensions enable tiling-assistant@leleat-on-github
 gnome-extensions enable caffeine@patapon.info
 
 echo
-### flatpak support
-sudo aptitude install \
-  flatpak+M \
-  gnome-software-plugin-flatpak+M; \
+### flatpak & snap (app-image via Gear Lever flatpak) support
+sudo aptitude install -r -t testing\
+  flatpak+M snapd+M \
+  gnome-software-plugin-flatpak+M \
+  gnome-software-plugin-snap+M; \
   flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-  
+
 echo
 ### Misc. settings
-#gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffer","kms-modifiers"]'
-#systemctl --user set-environment MOZ_ENABLE_WAYLAND=1
+gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffer","kms-modifiers"]'
+systemctl --user set-environment MOZ_ENABLE_WAYLAND=1
+
+../debian/scripts/02-post-desktop.sh
