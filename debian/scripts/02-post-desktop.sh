@@ -78,9 +78,9 @@ echo
 ###   xwayland video bridge (AUD package available... check it out)
 ###   akmod-v4l2loopback + akmod-nvidia (possible done?-- to check if this is same as v4l2loopback-dkms)
 ###   supergfxctl (super graphics mode controller)
-###   Protonup-qt (optimal from flatpack? - Done)
+###   Protonup-qt (optimal from flatpack? - yup, Done)
 ###   OpenRGB (optimal from AppImage? optimal to install with flatpak Gear Lever --needs to load UDEV rules)
-###   too WINE or not too WINE?
+###   too WINE or not too WINE? no 32-bit please ;-) go containers...
 
 
 ### to-do: Secure boot signing for v3 Linux kernel 
