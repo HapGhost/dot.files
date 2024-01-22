@@ -49,18 +49,19 @@ echo 'GRUB_CMDLINE_LINUX="$GRUB_CMDLINE_LINUX nvidia-drm.modeset=1 iommu=memaper
 update-grub
 
 sudo aptitude update; sudo aptitude install -t unstable \
-  nvidia-vulkan-icd \
-  nvidia-opencl-icd \
-  nvidia-vaapi-driver \
-  nvidia-vdpau-driver \
-  libxcb1 \
-  libnvidia-egl-wayland1 \
-  xwayland \
-  libgbm1 \
-  libnvidia-egl-gbm1 \
+  nvidia-vulkan-icd+M \
+  nvidia-opencl-icd+M \
+  nvidia-vaapi-driver+M \
+  nvidia-vdpau-driver+M \
+  libxcb1+M \
+  libnvidia-egl-wayland1+M \
+  xwayland+M \
+  libgbm1+M \
+  libnvidia-egl-gbm1+M \
   
 ### Optional Nvidia repo with newer beta drivers:
 curl -fSsL https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64/3bf863cc.pub | sudo gpg --dearmor | sudo tee /usr/share/keyrings/nvidia-drivers.gpg > /dev/null 2>&1
 
 echo 'deb [signed-by=/usr/share/keyrings/nvidia-drivers.gpg] https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64/ /' | sudo tee /etc/apt/sources.list.d/nvidia-drivers.list
 
+###
