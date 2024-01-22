@@ -8,19 +8,21 @@ echo "Can be installed with:"
 echo "$ sudo aptitude install -t experimental/unstable/testing/stable gnome-shell"
 
 sudo aptitude update; sudo aptitude install -r -t testing perl+M;
-sudo aptitude install -r -t testing \
+sudo aptitude full-upgrade -r -t testing \
   task-desktop \
   task-gnome-desktop+M \
   task-english \
   task-danish \
-  task-danish-desktop \
-  gnome-shell/experimental+M \
-  gnome-remote-desktop/experimental+M \
-  gnome-shell-extension-prefs/experimental+M \
+  task-danish-desktop
+  
+ sudo aptitude install -r -t experimental \
+  gnome-shell+M \
+  gnome-remote-desktop+M \
+  gnome-shell-extension-prefs+M \
   gnome-shell-extension-manager/testing \
-  gnome-shell-extension-tiling-assistant/experimental \
-  gnome-shell-extension-caffeine/experimental \
-  gnome-shell-extension-dashtodock/experimental
+  gnome-shell-extension-tiling-assistant \
+  gnome-shell-extension-caffeine \
+  gnome-shell-extension-dashtodock
 
 echo
 ### enable extensions
