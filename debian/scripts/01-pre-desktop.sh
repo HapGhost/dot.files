@@ -20,7 +20,7 @@ sudo apt update
 
 echo
 ### install base tooling
-sudo aptitude update; sudo aptitude -t testing install -yy \
+sudo aptitude update; sudo aptitude install -yy \
   zram-tools micro \
   apt+M \
   ca-certificates+M \
@@ -38,7 +38,7 @@ sudo aptitude update; sudo aptitude -t testing install -yy \
 echo
 ### do a distro upgrade
 # sudo aptitude safe-upgrade -yy
-sudo apt upgrade; sudo apt full-upgrade
+sudo apt upgrade
 
 echo
 ####Enable Google BBR
@@ -55,9 +55,7 @@ echo
 
 echo
 ### full upgrade to testing/Sid & cleanup
-# sudo aptitude update; sudo aptitude full-upgrade -yy; sudo aptitude clean --purge-unused -yy
-
-../../nvidia/01-kernel.sh
+sudo aptitude update; sudo aptitude full-upgrade -yy; sudo aptitude clean --purge-unused -yy
 
 echo
 echo "For reference, here is the latest gnome-shell:"
