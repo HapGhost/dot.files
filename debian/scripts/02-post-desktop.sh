@@ -3,49 +3,55 @@ echo
 echo "Doing POST Desktop install..."
 echo
 ### POST Desktop install/updates to latest upstream release
-sudo nala update; sudo aptitude install -t unstable \
-  pipewire \
-  pipewire-audio \
-  pipewire-pulse \
-  pipewire-alsa pipewire-jack \
-  pipewire-v4l2 \
-  libspa-0.2-modules \
+sudo nala update 
+sudo aptitude install -t testing perl+M 
+sudo aptitude install -t unstable \
+  pipewire+M \
+  pipewire-audio+M \
+  pipewire-pulse+M \
+  pipewire-alsa+M pipewire-jack \
+  pipewire-v4l2+M \
+  libspa-0.2-modules+M \
   libspa-0.2-jack \
-  libspa-0.2-libcamera \
-  libspa-0.2-bluetooth \
+  libspa-0.2-libcamera+M \
+  libspa-0.2-bluetooth+M \
   helvum \
   qjackctl \
-  gstreamer1.0-pipewire \
-  alsa-ucm-conf \
-  alsa-utils \
-  alsa-firmware-loaders \
-  gstreamer1.0-alsa \
-  wireplumber \
-  mesa-vulkan-drivers \
-  mesa-vdpau-drivers \
-  mesa-va-drivers \
-  mesa-opencl-icd \
-  libdrm2 \
-  libopengl0 \
-  libgd3 \
+  gstreamer1.0-pipewire+M \
+  alsa-ucm-conf+M \
+  alsa-utils+M \
+  alsa-firmware-loaders+M \
+  gstreamer1.0-alsa+M \
+  wireplumber+M \
+  mesa-vulkan-drivers+M \
+  mesa-vdpau-drivers+M \
+  mesa-va-drivers+M \
+  mesa-opencl-icd+M \
+  libdrm2+M \
+  libopengl0+M \
   steam-libs \
-  mangoapp \
-  gamescope \
+  mangoapp+M \
+  gamescope+M \
   goverlay \
   gamemode \
-  ffmpeg \
-  libopenh264-7 \
-  dav1d \
-  libwlroots12 \
-  qtwayland5 qt6-wayland \
-  libxcb1 xwayland libgbm1 \
-  xdg-desktop-portal-wlr \
-  xdg-utils \
-  vulkan-tools \
-  v4l2loopback-dkms \
-  libglfw3 \
-  dbus-broker \
-  apparmor apparmor-profiles apparmor-utils apparmor-profiles-extra
+  libopenh264-7+M \
+  dav1d+M \
+  libwlroots12+M \
+  qtwayland5+M qt6-wayland+M \
+  libxcb1+M xwayland+M libgbm1+M \
+  xdg-desktop-portal-wlr+M \
+  xdg-utils+M \
+  vulkan-tools+M \
+  v4l2loopback-dkms+M \
+  v4l2loopback-utils+M \
+  libglfw3+M \
+  dbus-broker+M \
+  apparmor+M apparmor-profiles+M apparmor-utils+M apparmor-profiles-extra+M
+
+sudo aptitude full-upgrade -t unstable \
+  gstreamer1.0-libav+M \
+  libavcodec60+M \
+  gstreamer1.0-packagekit+M
 
 echo
 ### enable JACK
