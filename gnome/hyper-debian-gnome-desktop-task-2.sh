@@ -8,17 +8,17 @@ echo "Can be installed with:"
 echo "$ sudo aptitude install -t experimental/unstable/testing/stable gnome-shell"
 
 sudo apt update; sudo apt install --mark-auto -t testing perl
-sudo apt install --install-suggests -t testing \
+sudo apt upgrade --install-suggests --with-new-pkgs -t testing \
   task-desktop \
   task-gnome-desktop \
   task-english \
   task-danish \
-  task-danish-desktop
+  task-danish-desktop \
   
-sudo apt install --install-suggests --mark-auto -t experimental \
-  gnome-shell \
-  gnome-remote-desktop \
-  gnome-shell-extension-prefs
+sudo aptitude full-upgrade -r -t experimental \
+  gnome-shell+ \
+  gnome-remote-desktop+ \
+  gnome-shell-extension-prefs+
 
 sudo apt install --install-suggests -t testing \
   gnome-shell-extension-manager 
@@ -44,7 +44,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 echo
 ### Misc. settings
-gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffer","kms-modifiers"]'
-systemctl --user set-environment MOZ_ENABLE_WAYLAND=1
+#gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffer","kms-modifiers"]'
+#systemctl --user set-environment MOZ_ENABLE_WAYLAND=1
 
 sudo apt autoclean; sudo apt autoremove

@@ -49,9 +49,9 @@ sudo aptitude install -r -t unstable \
   apparmor+M apparmor-profiles+M apparmor-utils+M apparmor-profiles-extra+M
 
 sudo aptitude full-upgrade -r -t unstable \
-  gstreamer1.0-libav+M \
-  libavcodec60+M \
-  gstreamer1.0-packagekit+M
+  gstreamer1.0-libav+ \
+  libavcodec60+ \
+  gstreamer1.0-packagekit+
 
 echo
 ### enable JACK

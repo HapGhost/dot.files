@@ -24,12 +24,9 @@ sudo apt update; sudo apt install -t testing \
   aptitude \
   nala
 
-sudo apt install -y --mark-auto -t testing \
+sudo apt upgrade -t testing \
   apt \
   ca-certificates \
-  tzdata \
-  libc-bin \
-  locales \
   gnupg \
   xz-utils
   
