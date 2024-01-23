@@ -16,7 +16,7 @@ sudo apt update
 
 echo
 ### install base tooling
-sudo apt update; sudo apt install -y --with-new-pkgs -t testing \
+sudo apt update; sudo apt install -t testing \
   zram-tools micro \
   git \
   curl \
@@ -24,7 +24,7 @@ sudo apt update; sudo apt install -y --with-new-pkgs -t testing \
   aptitude \
   nala
 
-sudo apt install -y --mark-auto --with-new-pkgs -t testing \
+sudo apt install -y --mark-auto -t testing \
   apt \
   ca-certificates \
   tz-data \
@@ -36,7 +36,7 @@ sudo apt install -y --mark-auto --with-new-pkgs -t testing \
 echo
 ### do a distro upgrade
 # sudo aptitude safe-upgrade -yy
-sudo apt upgrade; sudo apt full-upgrade --with-new-pkgs
+sudo apt upgrade --with-new-pkgs; sudo apt full-upgrade
 
 echo
 ####Enable Google BBR
