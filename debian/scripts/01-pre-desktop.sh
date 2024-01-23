@@ -27,7 +27,7 @@ sudo apt update; sudo apt install -t testing \
 sudo apt install -y --mark-auto -t testing \
   apt \
   ca-certificates \
-  tz-data \
+  tzdata \
   libc-bin \
   locales \
   gnupg \
