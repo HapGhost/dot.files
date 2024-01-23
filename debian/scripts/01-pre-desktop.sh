@@ -3,10 +3,6 @@ echo
 echo "Doing PRE Desktop install..."
 echo
 ### PRE Desktop install
-sudo apt update; sudo apt install -y \
-    aptitude \
-    apt \
-    ca-certificates
     
 sudo apt update; sudo apt upgrade -yy; sudo apt full-upgrade -yy; sudo apt autoremove -yy
 echo
@@ -20,25 +16,27 @@ sudo apt update
 
 echo
 ### install base tooling
-sudo aptitude update; sudo aptitude install -yy \
+sudo apt update; sudo apt install -y --with-new-pkgs -t testing \
   zram-tools micro \
-  apt+M \
-  ca-certificates+M \
   git \
   curl \
   wget \
-  tzdata+M \
-  libc-bin+M \
-  locales+M \
-  gnupg+M \
-  xz-utils+M \
   aptitude \
   nala
 
+sudo apt install -y --mark-auto --with-new-pkgs -t testing \
+  apt \
+  ca-certificates \
+  tz-data \
+  libc-bin \
+  locales \
+  gnupg \
+  xz-utils
+  
 echo
 ### do a distro upgrade
 # sudo aptitude safe-upgrade -yy
-sudo apt upgrade
+sudo apt upgrade; sudo apt full-upgrade --with-new-pkgs
 
 echo
 ####Enable Google BBR
@@ -55,7 +53,8 @@ echo
 
 echo
 ### full upgrade to testing/Sid & cleanup
-sudo aptitude update; sudo aptitude full-upgrade -yy; sudo aptitude clean --purge-unused -yy
+#sudo aptitude update; sudo aptitude full-upgrade; sudo aptitude clean --purge-unused -yy
+sudo apt autoclean; sudo apt autoremove  
 
 echo
 echo "For reference, here is the latest gnome-shell:"
