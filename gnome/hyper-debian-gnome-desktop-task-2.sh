@@ -36,10 +36,10 @@ gnome-extensions enable caffeine@patapon.info
 
 echo
 ### flatpak & snap (app-image via Gear Lever flatpak) support
-sudo apt install --mark-auto --with-new-pkgs --install-suggests -t testing\
-  flatpak snapd \
-  gnome-software-plugin-flatpak\
-  gnome-software-plugin-snap
+sudo aptitude install -r -t testing\
+  flatpak+ snapd+ \
+  gnome-software-plugin-flatpak+ \
+  gnome-software-plugin-snap+
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 echo
