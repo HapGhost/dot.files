@@ -7,23 +7,23 @@ echo
 echo "Can be installed with:" 
 echo "$ sudo aptitude install -t experimental/unstable/testing/stable gnome-shell"
 
-sudo apt update; sudo apt install --with-new-pkgs --mark-auto -t testing perl
-sudo apt install --with-new-pkgs --install-suggests -t testing \
+sudo apt update; sudo apt install --mark-auto -t testing perl
+sudo apt install --install-suggests -t testing \
   task-desktop \
   task-gnome-desktop \
   task-english \
   task-danish \
   task-danish-desktop
   
-sudo apt install --with-new-pkgs --install-suggests --mark-auto -t experimental \
+sudo apt install --install-suggests --mark-auto -t experimental \
   gnome-shell \
   gnome-remote-desktop \
   gnome-shell-extension-prefs
 
-sudo apt install --with-new-pkgs --install-suggests -t testing \
+sudo apt install --install-suggests -t testing \
   gnome-shell-extension-manager 
 
-sudo apt install --with-new-pkgs --install-suggests -t experimental \  
+sudo apt install --install-suggests -t experimental \  
   gnome-shell-extension-tiling-assistant \
   gnome-shell-extension-caffeine \
   gnome-shell-extension-dashtodock
