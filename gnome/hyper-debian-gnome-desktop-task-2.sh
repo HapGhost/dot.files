@@ -23,7 +23,7 @@ sudo aptitude full-upgrade -r -t experimental \
 sudo apt install --install-suggests -t testing \
   gnome-shell-extension-manager 
 
-sudo apt install --install-suggests -t experimental \  
+sudo apt install --install-suggests -t experimental \
   gnome-shell-extension-tiling-assistant \
   gnome-shell-extension-caffeine \
   gnome-shell-extension-dashtodock
