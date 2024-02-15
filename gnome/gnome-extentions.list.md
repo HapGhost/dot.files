@@ -4,7 +4,6 @@ azwallpaper@azwallpaper.gitlab.com
 blur-my-shell@aunetx
 burn-my-windows@schneegans.github.com
 CoverflowAltTab@palatis.blogspot.com
-dash-to-dock@micxgx.gmail.com
 debian-updates-indicator@glerro.pm.me
 just-perfection-desktop@just-perfection
 quick-settings-avatar@d-go
@@ -22,3 +21,4 @@ Caffeine
 Tiling assistant
 User Themes
 extension-manager
+dash-to-dock@micxgx.gmail.com

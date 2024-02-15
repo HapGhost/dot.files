@@ -45,7 +45,7 @@ options nvidia-current NVreg_EnableGpuFirmware=1
 ### DMA Buffers / IOMMU (https://us.download.nvidia.com/XFree86/Linux-x86_64/525.147.05/README/dma_issues.html)
 ### experimental add 'nvidia-drm.fbdev=1' below for >545.x.x driver
 sudo su
-echo 'GRUB_CMDLINE_LINUX="$GRUB_CMDLINE_LINUX nvidia-drm.modeset=1 iommu=memaper mem_sleep_default=deep"' > /etc/default/grub.d/nvidia-modeset.cfg
+echo 'GRUB_CMDLINE_LINUX="$GRUB_CMDLINE_LINUX nvidia-drm.modeset=1 nvidia-drm.fbdev=1 iommu=memaper mem_sleep_default=deep"' > /etc/default/grub.d/nvidia-modeset.cfg
 update-grub
 
 sudo aptitude update; sudo aptitude install -t unstable \

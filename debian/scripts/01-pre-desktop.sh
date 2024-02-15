@@ -24,11 +24,11 @@ sudo apt update; sudo apt install -t testing \
   aptitude \
   nala
 
-sudo apt upgrade -t testing \
-  apt \
-  ca-certificates \
-  gnupg \
-  xz-utils
+sudo aptitude upgrade -t testing \
+  apt+ \
+  ca-certificates+ \
+  gnupg+ \
+  xz-utils+
   
 echo
 ### do a distro upgrade

@@ -22,6 +22,22 @@ Package: libdrm*
 Pin: release a=unstable
 Pin-Priority: 990
 
+Package: libgl*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libegl*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libgbm*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libxa*
+Pin: release a=unstable
+Pin-Priority: 990
+
 Package: libopengl*
 Pin: release a=unstable
 Pin-Priority: 989
@@ -55,6 +71,10 @@ Pin: release a=unstable
 Pin-Priority: 989
 
 Package: libpipewire*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libspa*
 Pin: release a=unstable
 Pin-Priority: 990
 
@@ -109,3 +129,8 @@ Pin-Priority: 989
 Package: *
 Pin: release o=NVIDIA
 Pin-Priority: 100
+
+Package: *
+Pin: release a=unstable, o=Unofficial Multimedia Packages
+Pin-Priority: 100
+
