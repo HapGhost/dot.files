@@ -8,7 +8,7 @@ echo "Can be installed with:"
 echo "$ sudo aptitude install -t experimental/unstable/testing/stable gnome-shell"
 
 sudo apt update; sudo apt install --mark-auto -t testing perl
-sudo apt upgrade --install-suggests --with-new-pkgs -t unstable
+sudo apt upgrade --install-suggests --with-new-pkgs -t unstable \
   task-desktop \
   task-gnome-desktop \
   task-english \
@@ -42,6 +42,7 @@ gnome-extensions enable dash-to-dock@micxgx.gmail.com
 gnome-extensions enable tiling-assistant@leleat-on-github
 gnome-extensions enable caffeine@patapon.info
 gnome-extensions enable ubuntu-appindicators@ubuntu.com
+gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 
 echo
 ### flatpak & snap (app-image via Gear Lever flatpak) support

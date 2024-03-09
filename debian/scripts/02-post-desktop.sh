@@ -70,7 +70,7 @@ echo
 
 ### to-do: ### 
 ### custom-device-pollrates (pollrates USB - systemd service) +evhz to check pollrates
-### System76 Scheduler - Done!
+### System76 Scheduler - Done! -- reminder du install gnome-shell-extention for System76 Scheduler
 ### Options:
 ### switcheroo-control (D-Bus service to check...) --- FOR PRIME / dual gpu laptops/systems
 ### ADD - but not available in deb repo:
@@ -87,7 +87,7 @@ echo
 #echo 'deb [signed-by=/usr/share/keyrings/xanmod-archive-keyring.gpg] http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-release.list
 #sudo aptitude update; sudo aptitude install linux-xanmod-x64v3 -y
 
-### ffmepg et al from dev-multimedia repo
+### ffmepg et al from dev-multimedia repo -- seams to be left-behind debian-experimental
 #sudo cp ../apt/deb-multimedia.list /etc/apt/sources.list.d/
 #sudo apt-get update -oAcquire::AllowInsecureRepositories=true
 #sudo apt-get install deb-multimedia-keyring -y --allow-unauthenticated
