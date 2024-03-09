@@ -1,6 +1,6 @@
 #!/bin/sh
 echo
-echo "Doing PRE Desktop install..."
+echo "Doing PRE Desktop install for Rogue Debian..."
 echo
 ### PRE Desktop install
     
@@ -54,6 +54,7 @@ echo
 sudo apt autoclean; sudo apt autoremove  
 
 echo
+echo "*** ROGUE DEBIAN / gnome ***"
 echo "For reference, here is the latest gnome-shell:"
 apt policy gnome-shell
 echo

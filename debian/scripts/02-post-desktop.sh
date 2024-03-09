@@ -1,6 +1,6 @@
 #!/bin/sh
 echo
-echo "Doing POST Desktop install..."
+echo "Doing POST Desktop install fro Rogue Debian..."
 echo
 ### POST Desktop install/updates to latest upstream release
 sudo nala update 

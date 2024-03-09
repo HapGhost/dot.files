@@ -1,6 +1,6 @@
 #!/bin/sh
-
-echo
+"
+echo "*** ROGUE DEBIAN / gnome ***"
 echo "For reference, here is the latest gnome-shell:"
 apt policy gnome-shell
 echo
