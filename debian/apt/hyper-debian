@@ -122,6 +122,10 @@ Package: libglib2*
 Pin: release a=unstable
 Pin-Priority: 990
 
+Package: glib-*
+Pin: release a=unstable
+Pin-Priority: 990
+
 Package: libc-*
 Pin: release a=unstable
 Pin-Priority: 990
