@@ -28,8 +28,8 @@ git submodule update --init
 
 echo
 # Checkout release version
-#git checkout release-4.7.0
-#git submodule update --ini
+git checkout release-4.6.1
+git submodule update --ini
 
 echo
 #Build / Compile

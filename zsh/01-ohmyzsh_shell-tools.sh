@@ -2,7 +2,7 @@
 
 echo
 # install modern shell tolls, ZSH and plugins
-sudo nala update; sudo aptitude -t unstable install curl git stow neofetch btop nala bat lsd zoxide fzf \
+sudo nala update; sudo aptitude -t unstable install curl git stow neofetch btop nala bat lsd zoxide fzf inxi \
   zsh \
   zsh-autosuggestions \
   zsh-syntax-highlighting \

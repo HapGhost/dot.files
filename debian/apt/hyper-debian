@@ -18,11 +18,35 @@ Package: mesa-*
 Pin: release a=unstable
 Pin-Priority: 990
 
+Package: libglw*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libvulkan*
+Pin: release a=unstable
+Pin-Priority: 990
+
 Package: libdrm*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libgl*
+Package: libgles*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libglx*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libgl-*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libgl1*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libglapi*
 Pin: release a=unstable
 Pin-Priority: 990
 
@@ -40,23 +64,31 @@ Pin-Priority: 990
 
 Package: libopengl*
 Pin: release a=unstable
-Pin-Priority: 989
+Pin-Priority: 990
 
 Package: gstreamer*
-Pin: release a=unstable
-Pin-Priority: 989
+Pin: release a=unstable, l=debian
+Pin-Priority: 898
 
 Package: libgstreamer*
-Pin: release a=unstable
-Pin-Priority: 989
+Pin: release a=unstable, l=debian
+Pin-Priority: 898
+
+Package: gir1.2-gstreamer*
+Pin: release a=unstable, l=debian
+Pin-Priority: 898
+
+Package: gir1.2-gst*
+Pin: release a=unstable, l=debian
+Pin-Priority: 898
 
 Package: pipewire*
 Pin: release a=unstable
 Pin-Priority: 990
 
 Package: alsa-ucm-conf
-Pin: release a=stable
-Pin-Priority: 1000
+Pin: release a=unstable
+Pin-Priority: 989
 
 Package: alsa*
 Pin: release a=unstable
@@ -98,8 +130,24 @@ Package: xdg*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: ffmpeg*
+Package: libxdg-*
 Pin: release a=unstable
+Pin-Priority: 990
+
+Package: gir1.2-freedesktop*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: gir1.2-girepository*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libgirepository*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: ffmpeg*
+Pin: release a=unstable, l=debian
 Pin-Priority: 989
 
 Package: *
@@ -132,5 +180,4 @@ Pin-Priority: 100
 
 Package: *
 Pin: release a=unstable, o=Unofficial Multimedia Packages
-Pin-Priority: 100
-
+Pin-Priority: 99
