@@ -32,7 +32,7 @@ sudo aptitude install -r -t unstable \
   libopenh264-7+ \
   dav1d+ \
   libwlroots12+ \
-  qtwayland5+ qt6-wayland+ \
+  qt6-wayland+ \
   libxcb1+ xwayland+ libgbm1+ \
   xdg-desktop-portal-wlr+ \
   xdg-utils+ \

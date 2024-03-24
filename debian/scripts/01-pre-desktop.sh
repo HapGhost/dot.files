@@ -12,6 +12,9 @@ sudo cp ../apt/hyper-debian.list /etc/apt/sources.list.d/
 sudo cp ../apt/experimental.list /etc/apt/sources.list.d/
 sudo cp ../apt/hyper-debian /etc/apt/preferences.d/
 sudo apt update
+### Comment below is pseudo depreciated
+### se https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1041708
+### Better to set "Pin-Priority: 990" in apt/preferences.d/ for testing repos (both main and security)
 #sudo cp ../apt/local /etc/apt/apt.conf.d/
 
 echo
