@@ -29,9 +29,10 @@ sudo apt update; sudo apt install -t testing \
 
 sudo aptitude upgrade -t testing \
   apt+ \
+  apt-show-versions+ \
   ca-certificates+ \
   gnupg+ \
-  xz-utils+
+  xz-utils/stable+
   
 echo
 ### do a distro upgrade

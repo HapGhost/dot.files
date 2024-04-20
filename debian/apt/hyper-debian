@@ -58,7 +58,7 @@ Package: libgbm*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libxa*
+Package: libxatracker*
 Pin: release a=unstable
 Pin-Priority: 990
 
@@ -118,11 +118,19 @@ Package: libwayland*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libglib2*
+Package: xwayland*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: glib-*
+Package: libva-*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libnvidia-*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libglib2*
 Pin: release a=unstable
 Pin-Priority: 990
 
