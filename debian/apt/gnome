@@ -1,0 +1,7 @@
+Package: /gnome/ /gdm/ /adwaita/ /mutter/ /gir1.2/ /gsettings/
+Pin: version 46.*
+Pin-Priority: 999
+
+Package: /gnome/ /adwaita/ /nautilus/ /zenity/ /network-manager/ /gtk-4/ 
+Pin: release a=unstable
+Pin-Priority: 998

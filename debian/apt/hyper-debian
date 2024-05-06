@@ -14,11 +14,7 @@ Package: amd*
 Pin: release a=unstable
 Pin-Priority: 989
 
-Package: mesa-*
-Pin: release a=unstable
-Pin-Priority: 990
-
-Package: libglw*
+Package: /mesa/
 Pin: release a=unstable
 Pin-Priority: 990
 
@@ -46,10 +42,6 @@ Package: libgl1*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libglapi*
-Pin: release a=unstable
-Pin-Priority: 990
-
 Package: libegl*
 Pin: release a=unstable
 Pin-Priority: 990
@@ -66,15 +58,7 @@ Package: libopengl*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: gstreamer*
-Pin: release a=unstable, l=debian
-Pin-Priority: 898
-
-Package: libgstreamer*
-Pin: release a=unstable, l=debian
-Pin-Priority: 898
-
-Package: gir1.2-gstreamer*
+Package: /gstreamer/
 Pin: release a=unstable, l=debian
 Pin-Priority: 898
 
@@ -82,7 +66,7 @@ Package: gir1.2-gst*
 Pin: release a=unstable, l=debian
 Pin-Priority: 898
 
-Package: pipewire*
+Package: /pipewire/
 Pin: release a=unstable
 Pin-Priority: 990
 
@@ -98,27 +82,15 @@ Package: libasound2*
 Pin: release a=unstable
 Pin-Priority: 989
 
-Package: wireplumber*
+Package: /wireplumber/
 Pin: release a=unstable
 Pin-Priority: 989
-
-Package: libpipewire*
-Pin: release a=unstable
-Pin-Priority: 990
 
 Package: libspa*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libwireplumber*
-Pin: release a=unstable
-Pin-Priority: 989
-
-Package: libwayland*
-Pin: release a=unstable
-Pin-Priority: 990
-
-Package: xwayland*
+Package: /wayland/
 Pin: release a=unstable
 Pin-Priority: 990
 
@@ -126,11 +98,11 @@ Package: libva-*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libnvidia-*
+Package: /nvidia/
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libglib2*
+Package: /glib2/
 Pin: release a=unstable
 Pin-Priority: 990
 
@@ -138,23 +110,15 @@ Package: libc-*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: xdg*
+Package: /xdg/
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libxdg-*
+Package: /freedesktop/
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: gir1.2-freedesktop*
-Pin: release a=unstable
-Pin-Priority: 990
-
-Package: gir1.2-girepository*
-Pin: release a=unstable
-Pin-Priority: 990
-
-Package: libgirepository*
+Package: /girepository/
 Pin: release a=unstable
 Pin-Priority: 990
 

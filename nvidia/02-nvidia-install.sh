@@ -22,6 +22,9 @@ sudo systemctl enable nvidia-suspend.service
 sudo systemctl enable nvidia-hibernate.service
 sudo systemctl enable nvidia-resume.service
 
+# Set GBM mode for Wayland
+sudo cp ./99-nvidia-gbm.conf /etc/environment.d
+
 # CUDA
 sudo aptitude install -t unstable nvidia-cuda-dev nvidia-cuda-toolkit
 # OptiX Ray-Tracing
