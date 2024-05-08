@@ -110,6 +110,10 @@ Package: libc-*
 Pin: release a=unstable
 Pin-Priority: 990
 
+Package: libc6*
+Pin: release a=unstable
+Pin-Priority: 990
+
 Package: /xdg/
 Pin: release a=unstable
 Pin-Priority: 990
