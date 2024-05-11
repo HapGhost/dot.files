@@ -6,111 +6,47 @@ Package: firmware-*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: intel-*
-Pin: release a=unstable
-Pin-Priority: 989
-
-Package: amd*
-Pin: release a=unstable
-Pin-Priority: 989
-
-Package: /mesa/
+Package: /mesa/ libgbm* libxatracker*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libvulkan*
+Package: /vulkan/ mango* vkbasalt goverlay gamescope /vkd3d/ /primus/ mpv
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libdrm*
+Package: obs-studio obs-*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libgles*
+Package: libdrm-* libdrm2
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libglx*
+Package: libgles* libglx* libgl-* libgl1* libgl2* libglvnd* libegl* libopengl* libcogl* /glew/ /epoxy/ /glfw3/
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libgl-*
+Package: /gbm/ /-egl-/
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libgl1*
+Package: /pipewire/ libspa-*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libegl*
+Package: /wayland/ /wlroots/ libdecor-* libei-* libei1* libeis*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libgbm*
+Package: libva-* va-driver-all
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libxatracker*
+Package: /glib/
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libopengl*
-Pin: release a=unstable
-Pin-Priority: 990
-
-Package: /gstreamer/
-Pin: release a=unstable, l=debian
-Pin-Priority: 898
-
-Package: gir1.2-gst*
-Pin: release a=unstable, l=debian
-Pin-Priority: 898
-
-Package: /pipewire/
-Pin: release a=unstable
-Pin-Priority: 990
-
-Package: alsa-ucm-conf
-Pin: release a=unstable
-Pin-Priority: 989
-
-Package: alsa*
-Pin: release a=unstable
-Pin-Priority: 989
-
-Package: libasound2*
-Pin: release a=unstable
-Pin-Priority: 989
-
-Package: /wireplumber/
-Pin: release a=unstable
-Pin-Priority: 989
-
-Package: libspa*
-Pin: release a=unstable
-Pin-Priority: 990
-
-Package: /wayland/
-Pin: release a=unstable
-Pin-Priority: 990
-
-Package: libva-*
-Pin: release a=unstable
-Pin-Priority: 990
-
-Package: /nvidia/
-Pin: release a=unstable
-Pin-Priority: 990
-
-Package: /glib2/
-Pin: release a=unstable
-Pin-Priority: 990
-
-Package: libc-*
-Pin: release a=unstable
-Pin-Priority: 990
-
-Package: libc6*
+Package: libc-* libc6*
 Pin: release a=unstable
 Pin-Priority: 990
 
@@ -127,6 +63,34 @@ Pin: release a=unstable
 Pin-Priority: 990
 
 Package: ffmpeg*
+Pin: release a=unstable, l=debian
+Pin-Priority: 989
+
+Package: /gstreamer/ gir1.2-gst*
+Pin: release a=unstable, l=debian
+Pin-Priority: 898
+
+Package: alsa-ucm-conf
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: alsa* libasound2*
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: /wireplumber/ /-wp-/
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: intel-*
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: amd*
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: /nvidia/
 Pin: release a=unstable, l=debian
 Pin-Priority: 989
 
