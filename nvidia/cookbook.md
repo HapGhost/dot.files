@@ -47,18 +47,7 @@ options nvidia-current NVreg_EnableGpuFirmware=1
 sudo su
 echo 'GRUB_CMDLINE_LINUX="$GRUB_CMDLINE_LINUX nvidia-drm.modeset=1 nvidia-drm.fbdev=1 iommu=memaper mem_sleep_default=deep"' > /etc/default/grub.d/nvidia-modeset.cfg
 update-grub
-
-sudo aptitude update; sudo aptitude install -t unstable \
-  nvidia-vulkan-icd+M \
-  nvidia-opencl-icd+M \
-  nvidia-vaapi-driver+M \
-  nvidia-vdpau-driver+M \
-  libxcb1+M \
-  libnvidia-egl-wayland1+M \
-  xwayland+M \
-  libgbm1+M \
-  libnvidia-egl-gbm1+M \
-  
+ 
 ### Optional Nvidia repo with newer beta drivers:
 curl -fSsL https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64/3bf863cc.pub | sudo gpg --dearmor | sudo tee /usr/share/keyrings/nvidia-drivers.gpg > /dev/null 2>&1
 

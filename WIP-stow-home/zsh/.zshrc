@@ -1,9 +1,7 @@
-#neofetch
-#/bin/neofetch --disable theme icons term gpu cpu resolution shell --color_blocks off --backend chafa --source /usr/share/desktop-base/debian-logos/logo.svg --size 300px;
-/bin/neofetch --disable theme icons term gpu cpu resolution shell --color_blocks off --backend ascii --source /usr/share/desktop-base/debian-logos/logo.svg --size 300px;
-
+#fastfetch (ex-neofetch)
+/bin/fastfetch --config .config/fastfetch/config-terminal.jsonc
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+#export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -12,8 +10,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="agnoster"
 ZSH_THEME=""
 
 # Set list of themes to pick from when loading at random
@@ -76,20 +72,43 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo 1password)
-
+plugins=(sudo git debian command-not-found fzf)
+#fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# User Customization
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs virtualenv)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs)
 POWERLEVEL9K_MODE="awesome-fontconfig"
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+
+#Completion styling
+#zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
 export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
 export MANROFFOPT="-c"
+# Zoxide replace cd
+eval "$(zoxide init --cmd cd zsh)"
+# Shell integrations
+# bathelp in your .bashrc/.zshrc/*rc
+alias bathelp='batcat --plain --language=help'
+help() {
+    "$@" --help 2>&1 | bathelp
+}
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -97,16 +116,14 @@ export MANROFFOPT="-c"
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='micro'
- else
-   export EDITOR='nano'
- fi
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
 # Compilation flags
-export ARCHFLAGS="-arch x86_64_v3"
-#export ARCHFLAGS="-arch znver3"
-
+# export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -116,3 +133,14 @@ export ARCHFLAGS="-arch x86_64_v3"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# User Aliases
+alias cat='batcat'
+alias nano='micro'
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+alias neofetch='fastfetch'
+# shs in kitty
+alias s="kitty +kitten ssh"

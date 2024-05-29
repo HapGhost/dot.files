@@ -1,0 +1,7 @@
+Package: libc-* libc6* locales*
+Pin: version 2.39*
+Pin-Priority: 999
+
+Package: /glib/ /girepository/
+Pin: version 2.80*
+Pin-Priority: 999

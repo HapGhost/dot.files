@@ -1,0 +1,123 @@
+Package: linux-*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: firmware-*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: /mesa/ libgbm* libxatracker*
+Pin: version 24.1.*
+Pin-Priority: 990
+
+Package: /vulkan/ mango* vkbasalt goverlay gamescope /vkd3d/ /primus/ mpv
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: obs-studio obs-*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libdrm-* libdrm2
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libgles* libglx* libgl-* libgl1* libgl2* libglvnd* libegl* libopengl* libcogl* /glew/ /epoxy/ /glfw3/
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: /gbm/ /-egl-/
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: /pipewire/ libspa-*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: /wayland/ libxcb* /wlroots/ /wlr-/ libdecor-* libei-* libei1* libeis*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libva-* va-driver-all
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: /glib/ /girepository/
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libc-* libc6* locales*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: /xdg/
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: /freedesktop/
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: ffmpeg*
+Pin: release a=unstable, l=debian
+Pin-Priority: 989
+
+Package: /gstreamer/ gir1.2-gst*
+Pin: release a=unstable, l=debian
+Pin-Priority: 989
+
+Package: alsa-ucm-conf
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: alsa* libasound2*
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: /wireplumber/ /-wp-/
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: intel-*
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: amd*
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: /nvidia/
+Pin: release a=unstable, l=debian
+Pin-Priority: 989
+
+Package: *
+Pin: release a=unstable, l=debian
+Pin-Priority: 499
+
+Package: *
+Pin: release a=experimental, l=debian
+Pin-Priority: 100
+
+Package: *
+Pin: release a=testing, l=debian
+Pin-Priority: 900
+
+Package: *
+Pin: release a=testing-security
+Pin-Priority: 900
+
+Package: *
+Pin: release a=stable, l=debian
+Pin-Priority: 989
+
+Package: *
+Pin: release a=stable-security
+Pin-Priority: 989
+
+Package: *
+Pin: release o=NVIDIA
+Pin-Priority: 100
+
+Package: *
+Pin: release a=unstable, o=Unofficial Multimedia Packages
+Pin-Priority: 99

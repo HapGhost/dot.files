@@ -1,6 +1,6 @@
 #!/bin/sh
 
-NVIDIA_VERSION=550.78
+NVIDIA_VERSION=555.42.02
 wget https://download.nvidia.com/XFree86/Linux-x86_64/$NVIDIA_VERSION/NVIDIA-Linux-x86_64-$NVIDIA_VERSION.run
 echo
 echo "Now 'sudo su' and start installation:"

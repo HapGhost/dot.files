@@ -8,9 +8,9 @@ echo "Can be installed with:"
 echo "$ sudo aptitude install -t experimental/unstable/testing/stable gnome-shell"
 
 sudo apt update; sudo apt install --mark-auto -t testing perl
-sudo apt upgrade --install-suggests --with-new-pkgs -t unstable \
+sudo apt upgrade --install-suggests --with-new-pkgs \
   task-desktop \
-  task-gnome-desktop \
+  task-gnome-desktop gnome- \
   task-english \
   task-danish \
   task-danish-desktop \
@@ -22,7 +22,7 @@ sudo apt upgrade --install-suggests --with-new-pkgs -t unstable \
   gdm3+ \
   gnome-shell-extension-prefs+ \
   sound-juicer+ polari+ vinagre+ \
-  totem+ gnome-music+ maps+ \
+  totem+ gnome-music+ gnome-maps+ evolution- evolution-data-server+ gnome-contacts+\
   snapshot+ cheese- loupe+ \
   gnome-shell-extension-manager 
   
