@@ -4,8 +4,8 @@ echo "Doing POST Desktop install fro Rogue Debian..."
 echo
 ### POST Desktop install/updates to latest upstream release
 sudo nala update 
-sudo aptitude install -r -t testing perl+ 
-sudo aptitude install -r -t unstable \
+sudo aptitude install -r -t perl+ 
+sudo aptitude install -r -t testing \
   pipewire+ \
   pipewire-audio+ \
   pipewire-pulse+ \
@@ -43,7 +43,7 @@ sudo aptitude install -r -t unstable \
   dbus-broker+ \
   apparmor+ apparmor-profiles+ apparmor-utils+ apparmor-profiles-extra+
 
-sudo aptitude full-upgrade -r -t unstable \
+sudo aptitude full-upgrade -r -t testing \
   gstreamer1.0-libav+ \
   libavcodec60+ \
   gstreamer1.0-packagekit+

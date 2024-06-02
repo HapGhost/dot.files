@@ -26,7 +26,7 @@ sudo apt upgrade --install-suggests --with-new-pkgs \
   snapshot+ cheese- loupe+ \
   gnome-shell-extension-manager 
   
-sudo aptitude full-upgrade -r -t experimental \
+sudo aptitude full-upgrade -r -t unstable \
   gir1.2-freedesktop+ \
   gnome-shell+ \
   gnome-remote-desktop+ \

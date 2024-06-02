@@ -37,7 +37,7 @@ sudo aptitude upgrade -t testing \
 echo
 ### do a distro upgrade
 # sudo aptitude safe-upgrade -yy
-sudo apt upgrade --with-new-pkgs; sudo apt full-upgrade
+sudo apt upgrade --with-new-pkgs; sudo apt full-upgrade -t testing
 
 echo
 ####Enable Google BBR
