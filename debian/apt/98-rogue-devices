@@ -1,0 +1,56 @@
+Package: linux-*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: firmware-*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: /mesa/ libgbm* libxatracker*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: /pipewire/ libspa-*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libdrm-* libdrm2
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: /vulkan/ libgles* libglx* libgl-* libgl1* libgl2* libglvnd* libegl* libopengl* libcogl* /glew/ /epoxy/ /glfw3/
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: /gbm/ /-egl-/
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libva-* va-driver-all
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: alsa-ucm-conf
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: alsa* libasound2*
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: intel-*
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: amd*
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: /nvidia/
+Pin: release a=unstable, l=debian
+Pin-Priority: 989
+
+Package: *
+Pin: release o=NVIDIA
+Pin-Priority: 100
+

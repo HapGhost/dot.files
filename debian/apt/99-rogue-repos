@@ -1,0 +1,63 @@
+Package: /glib/ /girepository/
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: libc-* libc6* locales*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: /xdg/ /freedesktop/
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: /wayland/ libxcb* /wlroots/ /wlr-/ libdecor-* libei-* libei1* libeis*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: mango* vkbasalt goverlay gamescope /vkd3d/ /primus/ mpv
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: obs-studio obs-*
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: ffmpeg*
+Pin: release a=unstable, l=debian
+Pin-Priority: 989
+
+Package: /gstreamer/ gir1.2-gst*
+Pin: release a=unstable, l=debian
+Pin-Priority: 989
+
+Package: /wireplumber/ /-wp-/
+Pin: release a=unstable
+Pin-Priority: 989
+
+Package: *
+Pin: release a=unstable, l=debian
+Pin-Priority: 499
+
+Package: *
+Pin: release a=experimental, l=debian
+Pin-Priority: 100
+
+Package: *
+Pin: release a=testing, l=debian
+Pin-Priority: 900
+
+Package: *
+Pin: release a=testing-security
+Pin-Priority: 900
+
+Package: *
+Pin: release a=stable, l=debian
+Pin-Priority: 989
+
+Package: *
+Pin: release a=stable-security
+Pin-Priority: 989
+
+Package: *
+Pin: release a=unstable, o=Unofficial Multimedia Packages
+Pin-Priority: 99
