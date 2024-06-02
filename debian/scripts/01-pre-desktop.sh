@@ -10,7 +10,7 @@ echo
 sudo apt clean
 sudo cp ../apt/hyper-debian.list /etc/apt/sources.list.d/
 sudo cp ../apt/experimental.list /etc/apt/sources.list.d/
-sudo cp ../apt/hyper-debian /etc/apt/preferences.d/
+sudo cp ../apt/9* /etc/apt/preferences.d/
 sudo apt update
 ### Comment below is pseudo depreciated
 ### se https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1041708
