@@ -19,15 +19,15 @@ Pin: release a=unstable
 Pin-Priority: 990
 
 Package: obs-studio obs-*
-Pin: release a=unstable
+Pin: version 30.*
 Pin-Priority: 990
 
-Package: ffmpeg*
-Pin: release a=unstable, l=Debian
+Package: ffmpeg* libavcodec* libavdevice* libavfilter* libavformat* libavutils* libplacebo* libpostproc* libswresample* libswscala*
+Pin: release a=unstable, l=debian
 Pin-Priority: 989
 
 Package: /gstreamer/ gir1.2-gst*
-Pin: release a=unstable, l=Debian
+Pin: release a=unstable, l=debian
 Pin-Priority: 989
 
 Package: /wireplumber/ /-wp-/
@@ -35,15 +35,15 @@ Pin: release a=unstable
 Pin-Priority: 989
 
 Package: *
-Pin: release a=unstable, l=Debian
+Pin: release a=unstable, l=debian
 Pin-Priority: 499
 
 Package: *
-Pin: release a=experimental, l=Debian
+Pin: release a=experimental, l=debian
 Pin-Priority: 100
 
 Package: *
-Pin: release a=testing, l=Debian
+Pin: release a=testing, l=debian
 Pin-Priority: 900
 
 Package: *
@@ -51,7 +51,7 @@ Pin: release a=testing-security
 Pin-Priority: 900
 
 Package: *
-Pin: release a=stable, l=Debian
+Pin: release a=stable, l=debian
 Pin-Priority: 989
 
 Package: *

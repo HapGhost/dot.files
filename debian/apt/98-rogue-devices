@@ -47,7 +47,7 @@ Pin: release a=unstable
 Pin-Priority: 989
 
 Package: /nvidia/
-Pin: release a=unstable, l=Debian
+Pin: release a=unstable, l=debian
 Pin-Priority: 989
 
 Package: *
