@@ -1,0 +1,7 @@
+Package: libreoffice*
+Pin: release a=unstable
+Pin-Priority: 499
+
+package: /packagekit/
+pin: release a=unstable
+Pin-Priority: 499

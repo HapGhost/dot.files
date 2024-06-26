@@ -1,8 +1,4 @@
-Package: libreoffice*
-Pin: release a=unstable
-Pin-Priority: 499
-
-Package: /gnome/ /gdm/ /adwaita/ /mutter/ /gir1.2/ /gsettings/ /nautilus/
+Package: /gnome/ /gdm/ /adwaita/ /mutter/ /gir1.2/ /gsettings/ /nautilus/ /xdg/
 Pin: version 46.* 
 Pin-Priority: 999
 

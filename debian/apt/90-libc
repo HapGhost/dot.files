@@ -2,6 +2,6 @@ Package: libc-* libc6* locales*
 Pin: version 2.39*
 Pin-Priority: 999
 
-Package: /glib/ /girepository/
+Package: gir1.2-glib-2* libglib2* libgirepository-2*
 Pin: version 2.80*
 Pin-Priority: 999

@@ -1,12 +1,12 @@
-Package: /glib/ /girepository/
+Package: gir1.2-glib-2* libglib2* libgirepository-2*
 Pin: release a=unstable
-Pin-Priority: 990
+Pin-Priority: 999
 
 Package: libc-* libc6* locales*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: /xdg/ /freedesktop/
+Package: /xdg/ 
 Pin: release a=unstable
 Pin-Priority: 990
 
@@ -18,8 +18,16 @@ Package: mango* vkbasalt goverlay gamescope /vkd3d/ /primus/ mpv
 Pin: release a=unstable
 Pin-Priority: 990
 
+Package: /systemd/ libnn* /udev/ 
+Pin: version 256.*
+Pin-Priority: 990
+
 Package: obs-studio obs-*
 Pin: version 30.*
+Pin-Priority: 990
+
+Package: ffmpeg
+Pin: version 7.*
 Pin-Priority: 990
 
 Package: ffmpeg* libavcodec* libavdevice* libavfilter* libavformat* libavutils* libplacebo* libpostproc* libswresample* libswscala*

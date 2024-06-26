@@ -11,7 +11,7 @@ Pin: release a=unstable
 Pin-Priority: 990
 
 Package: /pipewire/ libspa-*
-Pin: release a=unstable
+Pin: version 1.2.*
 Pin-Priority: 990
 
 Package: libdrm-* libdrm2

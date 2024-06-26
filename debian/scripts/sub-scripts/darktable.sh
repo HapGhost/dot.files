@@ -28,8 +28,8 @@ git submodule update --init
 
 echo
 # Checkout release version
-#git checkout release-4.6.x
-#git submodule update --ini
+git checkout darktable-4.8.x
+git submodule update --ini
 
 echo
 #Build / Compile
