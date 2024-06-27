@@ -22,7 +22,7 @@ Package: /systemd/ libnn* /udev/
 Pin: version 256.*
 Pin-Priority: 990
 
-Package: obs-studio obs-*
+Package: obs-studio obs-* libobs*
 Pin: version 30.*
 Pin-Priority: 990
 
@@ -30,7 +30,7 @@ Package: ffmpeg
 Pin: version 7.*
 Pin-Priority: 990
 
-Package: ffmpeg* libavcodec* libavdevice* libavfilter* libavformat* libavutils* libplacebo* libpostproc* libswresample* libswscala*
+Package: ffmpeg* libavcodec* libavdevice* libavfilter* libavformat* libavutil* libplacebo* libpostproc* libswresample* libswscale*
 Pin: release a=unstable, l=debian
 Pin-Priority: 989
 
