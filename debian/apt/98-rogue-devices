@@ -26,7 +26,7 @@ Package: /gbm/ /-egl-/
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: libva-* va-driver-all
+Package: libva-* va-driver-all libva2*
 Pin: release a=unstable
 Pin-Priority: 990
 

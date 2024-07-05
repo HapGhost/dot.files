@@ -1,6 +1,6 @@
 Package: gir1.2-glib-2* libglib2* libgirepository-2*
 Pin: release a=unstable
-Pin-Priority: 999
+Pin-Priority: 990
 
 Package: libc-* libc6* locales*
 Pin: release a=unstable

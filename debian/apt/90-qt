@@ -1,0 +1,7 @@
+Package: /qt6/
+Pin: version 6.6.* 
+Pin-Priority: 990
+
+Package: /qt5/
+Pin: version 5.15.13*
+Pin-Priority: 990
