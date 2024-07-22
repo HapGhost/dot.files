@@ -48,6 +48,12 @@ echo
 sudo cp ../sysctl/99-vm-zram-parameters.conf /etc/sysctl.d/
 
 echo
+### enable amd_pstate=guided
+sudo cp ../kernel/amd-pstate.cfg /etc/default/grub.d/
+sudo update-grub
+
+
+echo
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 #sudo aptitude install xdg-user-dirs-gtk+M -yy
 #xdg-user-dirs-update

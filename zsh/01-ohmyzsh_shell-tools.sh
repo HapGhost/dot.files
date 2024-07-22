@@ -2,16 +2,17 @@
 
 echo
 # install modern shell tolls, ZSH and plugins
-sudo nala update; sudo aptitude -t unstable install curl git stow neofetch btop nala bat lsd zoxide fzf inxi \
+sudo nala update; sudo aptitude -t unstable install curl git stow btop nala bat lsd zoxide fzf \
   zsh \
   zsh-autosuggestions \
-  zsh-syntax-highlighting \
-  zsh-theme-powerlevel9k
+  zsh-syntax-highlighting
 
 echo
 # Run script to install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 esac
+
+sudo apt install inxi
 
 # Set paths PATH=/home/hapghost/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 HOME=/home/hapghost
