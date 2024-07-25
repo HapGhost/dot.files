@@ -64,7 +64,7 @@ Pin-Priority: 901
 
 Package: *
 Pin: release a=stable-proposed-updates
-Pin-Priority: 989
+Pin-Priority: 988
 
 Package: *
 Pin: release a=stable, l=debian
