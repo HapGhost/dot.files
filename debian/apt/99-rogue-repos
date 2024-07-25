@@ -59,6 +59,14 @@ Pin: release a=testing-security
 Pin-Priority: 900
 
 Package: *
+Pin: release a=stable-backports
+Pin-Priority: 901
+
+Package: *
+Pin: release a=stable-proposed-updates
+Pin-Priority: 989
+
+Package: *
 Pin: release a=stable, l=debian
 Pin-Priority: 989
 

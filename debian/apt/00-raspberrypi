@@ -1,0 +1,15 @@
+Package: *
+Pin: release a=unstable, b=armhf
+Pin-Priority: 100
+
+Package: *
+Pin: release a=testing, b=armhf
+Pin-Priority: 499
+
+Package: *
+Pin: release a=stable, b=armhf
+Pin-Priority: 500
+
+Package: *
+Pin: release a=stable, l=Raspberry Pi Foundation
+Pin-Priority: 990
