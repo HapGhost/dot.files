@@ -2,6 +2,3 @@ Package: /qt/
 Pin: version 6.6.* 
 Pin-Priority: 990
 
-Package: /qt/
-Pin: version 5.15.*
-Pin-Priority: 990 

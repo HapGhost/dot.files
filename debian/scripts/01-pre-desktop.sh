@@ -20,15 +20,15 @@ sudo apt update
 
 echo
 ### install base tooling
-sudo apt update; sudo apt install -t testing \
+sudo apt update; sudo apt install -t testing -yy \
   zram-tools \
   git \
   curl \
   wget \
   aptitude \
   nala \
-  dpkg-dev \
-  build-essential \
+  dpkg-dev/unstable \
+  build-essential/unstable \
   debhelper \
   zstd \
   zip \
@@ -56,12 +56,6 @@ sudo apt update; sudo apt install -t testing \
   ibus \
   ibus-table \
   laptop-detect \
-  efibootmgr \
-  grub-efi-amd64 \
-  grub-efi-amd64-bin \
-  grub-efi-amd64-signed \
-  shim-signed \
-  shim-helpers-amd64-signed \
   uidmap \
   minisign
 
@@ -173,12 +167,11 @@ sudo apt install \
   libspa-0.2-bluetooth \
   libnss-mdns \
   libproxy1-plugin-networkmanager \
-  ntp \
   iputils-ping
 
 echo
 ### modules
-sudo apt update \
+sudo apt install \
   dkms \
   bolt \
   inputattach \
@@ -198,6 +191,17 @@ sudo apt update \
  # sudo apt install \
   # fprintd \
   # libpam-fprintd
+
+echo 
+### grub
+### SKIP IF USING systemd-boot
+sudo apt install \
+  efibootmgr \
+  grub-efi-amd64 \
+  grub-efi-amd64-bin \
+  grub-efi-amd64-signed \
+  shim-signed \
+  shim-helpers-amd64-signed
 
 echo
 ### kernel

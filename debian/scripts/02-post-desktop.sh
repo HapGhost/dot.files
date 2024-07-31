@@ -6,26 +6,17 @@ echo
 sudo nala update 
 sudo aptitude install -r -t perl+ 
 sudo aptitude install -r -t testing \
-  pipewire+ \
-  pipewire-audio+ \
-  pipewire-pulse+ \
-  pipewire-alsa+ \
-  pipewire-v4l2+ \
-  libspa-0.2-modules+ \
   helvum+ \
-  gstreamer1.0-pipewire+ \
   alsa-ucm-conf+ \
-  alsa-utils+ \
-  alsa-firmware-loaders+ \
-  gstreamer1.0-alsa+ \
-  wireplumber+ \
-  mesa-vulkan-drivers+ \
-  mesa-vdpau-drivers+ \
+  mesa-vulkan-drivers \
+  mesa-vdpau-drivers \
   mesa-va-drivers+ \
   mesa-opencl-icd+ \
   libdrm2+ \
   libopengl0+ \
   steam-libs \
+  steam-devices \
+  vdpau-driver-all \
   mangoapp+ \
   gamescope+ \
   goverlay+ \
@@ -41,22 +32,57 @@ sudo aptitude install -r -t testing \
   v4l2loopback-utils+ \
   libglfw3+ \
   dbus-broker+ \
-  apparmor+ apparmor-profiles+ apparmor-utils+ apparmor-profiles-extra+
+  apparmor+ apparmor-profiles+ apparmor-utils+ apparmor-profiles-extra+ \
+  power-profiles-daemon powermgmt-base switcheroo-control
 
-sudo aptitude full-upgrade -r -t testing \
-  gstreamer1.0-libav+ \
-  libavcodec60+ \
-  gstreamer1.0-packagekit+
+echo
+### printers
+sudo apt install \
+  cups \
+  cups-pk-helper \
+  printer-driver-brlaser \
+  printer-driver-escpr \
+  hplip \
+  system-config-printer-common \
+  system-config-printer-udev
+
+echo
+### media
+sudo aptitude full-upgrade -r -t \
+  ffmpeg \
+  gstreamer1.0-alsa \
+  gstreamer1.0-libav \
+  gstreamer1.0-vaapi \
+  gstreamer1.0-plugins-ugly \
+  gstreamer1.0-plugins-base-apps \
+  gstreamer1.0-pulseaudio \
+  gstreamer1.0-pipewire \
+  libavcodec-extra
 
 echo
 ### enable JACK
 #sudo cp /usr/share/doc/pipewire/examples/ld.so.conf.d/pipewire-jack-*.conf /etc/ld.so.conf.d
 #sudo ldconfig
 
+echo
+### accessibility
+sudo apt install \
+  at-spi2-core \
+  brltty \
+  espeak-ng \
+  mousetweaks \
+  orca \
+  speech-dispatcher \
+  speech-dispatcher-espeak-ng
+
 echo  
 ### Fonts, cursus, icons
 sudo nala install -y \
   fonts-recommended \
+  fonts-cantarell \
+  fonts-dejavu-core \
+  fonts-freefont-ttf \
+  fonts-liberation \
   fonts-font-awesome \
   fonts-octicons \
   bibata-cursor-theme \
@@ -64,8 +90,18 @@ sudo nala install -y \
   ttf-mscorefonts-installer
 echo 
 ./sub-scripts/nerdfonts.sh  
+#echo
+#./sub-scripts/system76-scheduler.sh
+
+
+
 echo
-./sub-scripts/system76-scheduler.sh
+### plymouth
+sudo apt install -y \
+  plymouth \
+  plymouth-themes
+
+
 
 
 ### to-do: ### 
