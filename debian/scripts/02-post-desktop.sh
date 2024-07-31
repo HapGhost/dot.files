@@ -4,7 +4,7 @@ echo "Doing POST Desktop install fro Rogue Debian..."
 echo
 ### POST Desktop install/updates to latest upstream release
 sudo nala update 
-sudo aptitude install -r -t testing \
+sudo aptitude install -r -y \
   helvum+ \
   alsa-ucm-conf+ \
   mesa-vulkan-drivers \
@@ -36,7 +36,7 @@ sudo aptitude install -r -t testing \
 
 echo
 ### printers
-sudo apt install \
+sudo apt install -y \
   cups \
   cups-pk-helper \
   printer-driver-brlaser \
@@ -47,7 +47,7 @@ sudo apt install \
 
 echo
 ### media
-sudo aptitude full-upgrade -r \
+sudo aptitude full-upgrade -r -y \
   ffmpeg \
   gstreamer1.0-alsa \
   gstreamer1.0-libav \
@@ -65,7 +65,7 @@ echo
 
 echo
 ### accessibility
-sudo apt install \
+sudo apt install -y \
   at-spi2-core \
   brltty \
   espeak-ng \
