@@ -47,7 +47,7 @@ sudo apt install \
 
 echo
 ### media
-sudo aptitude full-upgrade -r -t \
+sudo aptitude full-upgrade -r \
   ffmpeg \
   gstreamer1.0-alsa \
   gstreamer1.0-libav \
