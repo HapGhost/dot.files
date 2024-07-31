@@ -7,5 +7,5 @@ Pin: version 30.*
 Pin-Priority: 999
 
 Package: ffmpeg* libavcodec* libavdevice* libavfilter* libavformat* libavutil* libplacebo* libpostproc* libswresample* libswscale*
-Pin: version *, l=debian
+Pin: version 7.*, l=debian
 Pin-Priority: 999
