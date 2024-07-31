@@ -5,3 +5,7 @@ Pin-Priority: 999
 Package: gir1.2-glib-2* libglib2* libgirepository-2*
 Pin: version 2.80*
 Pin-Priority: 999
+
+Package: /systemd/ libnn* /udev/ 
+Pin: version 256.*
+Pin-Priority: 990

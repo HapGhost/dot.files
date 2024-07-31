@@ -1,0 +1,11 @@
+Package: mango* vkbasalt goverlay gamescope /vkd3d/ /primus/ mpv
+Pin: release a=unstable
+Pin-Priority: 990
+
+Package: obs-studio obs-* libobs*
+Pin: version 30.*
+Pin-Priority: 999
+
+Package: ffmpeg* libavcodec* libavdevice* libavfilter* libavformat* libavutil* libplacebo* libpostproc* libswresample* libswscale*
+Pin: version *, l=debian
+Pin-Priority: 999

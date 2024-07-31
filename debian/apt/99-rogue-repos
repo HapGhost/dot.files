@@ -14,22 +14,6 @@ Package: /wayland/ libxcb* /wlroots/ /wlr-/ libdecor-* libei-* libei1* libeis*
 Pin: release a=unstable
 Pin-Priority: 990
 
-Package: mango* vkbasalt goverlay gamescope /vkd3d/ /primus/ mpv
-Pin: release a=unstable
-Pin-Priority: 990
-
-Package: /systemd/ libnn* /udev/ 
-Pin: version 256.*
-Pin-Priority: 990
-
-Package: obs-studio obs-* libobs*
-Pin: version 30.*
-Pin-Priority: 990
-
-Package: ffmpeg
-Pin: version 7.*
-Pin-Priority: 990
-
 Package: ffmpeg* libavcodec* libavdevice* libavfilter* libavformat* libavutil* libplacebo* libpostproc* libswresample* libswscale*
 Pin: release a=unstable, l=debian
 Pin-Priority: 989
@@ -47,7 +31,7 @@ Pin: release a=unstable, l=debian
 Pin-Priority: 499
 
 Package: *
-Pin: release a=experimental, l=debian
+Pin: release a=experimental
 Pin-Priority: 100
 
 Package: *
@@ -64,10 +48,6 @@ Pin-Priority: 901
 
 Package: *
 Pin: release a=stable-proposed-updates
-Pin-Priority: 988
-
-Package: *
-Pin: release a=stable-updates
 Pin-Priority: 989
 
 Package: *
