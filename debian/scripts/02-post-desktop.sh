@@ -4,7 +4,6 @@ echo "Doing POST Desktop install fro Rogue Debian..."
 echo
 ### POST Desktop install/updates to latest upstream release
 sudo nala update 
-sudo aptitude install -r -t perl+ 
 sudo aptitude install -r -t testing \
   helvum+ \
   alsa-ucm-conf+ \
